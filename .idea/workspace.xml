@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="741320e4-bb3e-4b6a-bca6-6533c3224ee0" name="Changes" comment="NOW using the MongoDB database for user and postgresql for product and order &#10;And for mongodb the id type changed from Long to string and also update in user repository as extends now mongo repository and for mongo some updation in other files also">
+    <list default="true" id="741320e4-bb3e-4b6a-bca6-6533c3224ee0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/product/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/product/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,7 +187,15 @@
       <option name="project" value="LOCAL" />
       <updated>1754409494016</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="changed the url of databases in user move from mongodb compass to cloud database (MongoDB Atlas) and for product move from postgresql to posgtresql cloud (Neon Serverless Postgresql)">
+      <option name="closed" value="true" />
+      <created>1754419901138</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1754419901138</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -203,6 +213,7 @@
     <MESSAGE value="updation in files" />
     <MESSAGE value="done the configuration for postgresql for this spring boot Ecommerce microservices where order, product and user have different databases" />
     <MESSAGE value="NOW using the MongoDB database for user and postgresql for product and order &#10;And for mongodb the id type changed from Long to string and also update in user repository as extends now mongo repository and for mongo some updation in other files also" />
-    <option name="LAST_COMMIT_MESSAGE" value="NOW using the MongoDB database for user and postgresql for product and order &#10;And for mongodb the id type changed from Long to string and also update in user repository as extends now mongo repository and for mongo some updation in other files also" />
+    <MESSAGE value="changed the url of databases in user move from mongodb compass to cloud database (MongoDB Atlas) and for product move from postgresql to posgtresql cloud (Neon Serverless Postgresql)" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed the url of databases in user move from mongodb compass to cloud database (MongoDB Atlas) and for product move from postgresql to posgtresql cloud (Neon Serverless Postgresql)" />
   </component>
 </project>

@@ -1,18 +1,53 @@
 spring:
   application:
     name: product-service
+
+  #    this is when using mysql by docker
   datasource:
-#    url: jdbc:postgresql://localhost:5432/product
-    url: jdbc:postgresql://ep-soft-recipe-aevurt0x-pooler.c-2.us-east-2.aws.neon.tech/product?sslmode=require&channel_binding=require'
-    username: neondb_owner
-    password: npg_LKG04zXljxqJ
+    url: jdbc:mysql://localhost:3307/embarkx
+    username: embarkx
+    password: embarkx
   jpa:
-    database: POSTGRESQL
     show-sql: true
     hibernate:
       ddl-auto: update
-    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    database-platform: org.hibernate.dialect.MySQLDialect
+    properties:
+      hibernate:
+        format_sql: true
 
+#    this is when using mysql locally
+#  datasource:
+#    url: jdbc:mysql://localhost:3306/productservice
+#    username: root
+#    password: mysql@#8456
+#  jpa:
+#    show-sql: true
+#    hibernate:
+#      ddl-auto: update
+#    database-platform: org.hibernate.dialect.MySQLDialect
+#    properties:
+#      hibernate:
+#        format_sql: true
+
+#    when using postgersql locally with using the postgres by docker
+#    url: jdbc:postgresql://localhost:5432/product
+#    username: embarkx
+#    password: embarkx
+
+#    this username and password when connected to remote means the cloud neondb
+#    url: jdbc:postgresql://ep-soft-recipe-aevurt0x-pooler.c-2.us-east-2.aws.neon.tech/product?sslmode=require&channel_binding=require'
+#    username: neondb_owner
+#    password: npg_LKG04zXljxqJ
+
+#  jpa:
+#    database: POSTGRESQL
+#    show-sql: true
+#    hibernate:
+#      ddl-auto: update
+#    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+#    this is when using h2 database
 #  h2:
 #    console:
 #      enabled: true

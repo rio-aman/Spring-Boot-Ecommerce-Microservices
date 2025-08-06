@@ -4,6 +4,8 @@ spring:
   data:
     mongodb:
 #      uri: mongodb://localhost:27017/userdb   this while connecting to mongodb compass
+
+#      this is for connecting to the mongodb atlas (on remote or cloud)
       uri: mongodb+srv://aman700065:MDBaman@user-data.mdzhsz1.mongodb.net/?retryWrites=true&w=majority&appName=user-data
       database: userdb
 
