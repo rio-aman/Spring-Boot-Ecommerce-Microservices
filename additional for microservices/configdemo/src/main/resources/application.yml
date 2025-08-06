@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: config-demo
+
+# this basically used for switching the profile between dev or prod and activating one will overwrite the default data
+# if no one is active then the default data will show
+  profiles:
+    active: prod
+
+build:
+  id: 122
+  version: 2.2.2
+  name: "Default-Build"
+  type: "Default Build"

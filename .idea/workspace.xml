@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="741320e4-bb3e-4b6a-bca6-6533c3224ee0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="741320e4-bb3e-4b6a-bca6-6533c3224ee0" name="Changes" comment="applied the configuration for the product to run on the postgresql locally by docker and by remote (cloud neon serverless postgresql) and after it to mysql locally and to the cloud or remote in phpmyadmin using docker and all are written in the application yml file&#10;&#10;so here now the order is connected to postgresql by docker locally and product connect to mysql by docker (on remote) and at last the user is connected to the mongodb cloud as mongodb atlas">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/product/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/product/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,7 +191,15 @@
       <option name="project" value="LOCAL" />
       <updated>1754419901138</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="applied the configuration for the product to run on the postgresql locally by docker and by remote (cloud neon serverless postgresql) and after it to mysql locally and to the cloud or remote in phpmyadmin using docker and all are written in the application yml file&#10;&#10;so here now the order is connected to postgresql by docker locally and product connect to mysql by docker (on remote) and at last the user is connected to the mongodb cloud as mongodb atlas">
+      <option name="closed" value="true" />
+      <created>1754459170732</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1754459170732</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -214,6 +218,7 @@
     <MESSAGE value="done the configuration for postgresql for this spring boot Ecommerce microservices where order, product and user have different databases" />
     <MESSAGE value="NOW using the MongoDB database for user and postgresql for product and order &#10;And for mongodb the id type changed from Long to string and also update in user repository as extends now mongo repository and for mongo some updation in other files also" />
     <MESSAGE value="changed the url of databases in user move from mongodb compass to cloud database (MongoDB Atlas) and for product move from postgresql to posgtresql cloud (Neon Serverless Postgresql)" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed the url of databases in user move from mongodb compass to cloud database (MongoDB Atlas) and for product move from postgresql to posgtresql cloud (Neon Serverless Postgresql)" />
+    <MESSAGE value="applied the configuration for the product to run on the postgresql locally by docker and by remote (cloud neon serverless postgresql) and after it to mysql locally and to the cloud or remote in phpmyadmin using docker and all are written in the application yml file&#10;&#10;so here now the order is connected to postgresql by docker locally and product connect to mysql by docker (on remote) and at last the user is connected to the mongodb cloud as mongodb atlas" />
+    <option name="LAST_COMMIT_MESSAGE" value="applied the configuration for the product to run on the postgresql locally by docker and by remote (cloud neon serverless postgresql) and after it to mysql locally and to the cloud or remote in phpmyadmin using docker and all are written in the application yml file&#10;&#10;so here now the order is connected to postgresql by docker locally and product connect to mysql by docker (on remote) and at last the user is connected to the mongodb cloud as mongodb atlas" />
   </component>
 </project>
