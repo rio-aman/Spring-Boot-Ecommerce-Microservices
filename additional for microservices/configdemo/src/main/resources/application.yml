@@ -18,10 +18,15 @@ spring:
 #  id: ${ID}
 #  version: ${VERSION}
 #  name: ${NAME}
-#  type: "Default Build"
 
 build:
-  id: ${ID} # through the command line argument given in edit configuration
+  id: 2046
+  version: 2.2.3
+  name: "Application"
+  type: "Application Build"
+
+#build:
+#  id: ${ID} # through the command line argument given in edit configuration
 
 #  commands for making the jar file  -> mvnw clean package
 #  commands for running the jar file  -> java -jar target\here jar file name
