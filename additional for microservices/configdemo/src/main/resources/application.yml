@@ -5,7 +5,7 @@ spring:
 # this basically used for switching the profile between dev or prod and activating one will overwrite the default data
 # if no one is active then the default data will show
 #  profiles:
-#    active: prod
+#    active: dev
 
 #build:
 #  id: 122
@@ -18,12 +18,13 @@ spring:
 #  id: ${ID}
 #  version: ${VERSION}
 #  name: ${NAME}
+#  type: ${TYPE}
 
-build:
-  id: 2046
-  version: 2.2.3
-  name: "Application"
-  type: "Application Build"
+#build:
+#  id: 2046
+#  version: 2.2.3
+#  name: "Application"
+#  type: "Application Build"
 
 #build:
 #  id: ${ID} # through the command line argument given in edit configuration
@@ -36,3 +37,8 @@ build:
 
 #by placeholders the environment variables given
 # ID=9999;VERSION=1.0.0;NAME=IntellijEnvironmentVariable
+
+build:
+  id: ${ID}
+  version: ${VERSION}
+  name: ${NAME}

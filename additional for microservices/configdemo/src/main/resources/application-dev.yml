@@ -1,5 +1,5 @@
 build:
-  id: 101
-  version: 1.2.3
-  name: "Dev-Production-Build"
+  id: 110
+  version: 1.1.0
+  name: "Development-Build"
   type: "Development Build"
