@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: cloudconfigserver
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/rio-aman/spring-cloud-server-app-configuration
+server:
+  port: 8888
