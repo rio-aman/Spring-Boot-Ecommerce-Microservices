@@ -1,0 +1,21 @@
+#spring:
+#  application:
+#    name: config-demo
+#  config:
+#    import: optional:configserver:http://localhost:8888
+#  profiles:
+#    active: prod
+# this above has to be removed cause if they are there then on configserver it again search for configserver
+# which simply makes a loop of it which never ends
+
+build:
+  id: 100
+  version: 1.0.0
+  name: "Native Default-Build"
+  type: "Native Default Build"
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh

@@ -1,8 +1,16 @@
 spring:
   application:
     name: configserver
+#  WHEN USING THE FILE BASED CONFIGURATION
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-location: classpath:/config
 
-#    NOW USING MYSQL DATABASE
+#    WHEN USING MYSQL DATABASE
 #  profiles:
 #    active: jdbc
 #  datasource:
@@ -20,13 +28,13 @@ spring:
 #          sql: "SELECT PROP_KEY, PROP_VALUE from PROPERTIES where APPLICATION=? and PROFILE=? and LABEL=?"
 #          default-label: main
 #    THIS WHEN WE USING GIT REPOSITORY FOR THE CONFIGURATIONS
-  cloud:
-    config:
-      server:
-        git:
-          uri: https://github.com/rio-aman/spring-cloud-server-app-configuration
-          username: ${GIT_USER}
-          password: ${GIT_TOKEN}
+#  cloud:
+#    config:
+#      server:
+#        git:
+#          uri: https://github.com/rio-aman/spring-cloud-server-app-configuration
+#          username: ${GIT_USER}
+#          password: ${GIT_TOKEN}
 server:
   port: 8888
 
