@@ -31,5 +31,12 @@ server:
   port: 8888
 
 #using the aes (advanced encryption standard) for encrypting and decrypting the secret messages
+#encrypt:
+#  key: "0E23242EA6D3D706"
+
+#now using keytool or keystore and rsa key pair
 encrypt:
-  key: "0E23242EA6D3D706"
+  key-store:
+    location: config-server.jks
+    password: mypass
+    alias: config-server-key
