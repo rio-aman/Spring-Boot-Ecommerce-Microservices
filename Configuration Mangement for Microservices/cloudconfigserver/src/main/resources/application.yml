@@ -8,7 +8,25 @@ spring:
     config:
       server:
         native:
-          search-location: classpath:/config
+#          search-location: classpath:/config
+#          this i have changed because the classpath is static
+          search-location: file:///C:/Users/pc/Desktop/Ecom-Microservices/Configuration Mangement for Microservices/config
+
+#### because
+#Spring Cloud Config has two main modes for native files:
+#
+#  Classpath mode
+#  spring.cloud.config.server.native.search-locations=classpath:/config
+#  → Reads files from inside the JAR (unchangeable at runtime)
+#
+#  File system mode
+#  spring.cloud.config.server.native.search-locations=file:///path/to/config
+#  → Reads from disk every time, so changes are visible immediately
+#
+#  Right now, I am using in mode 1, which is static.
+# that's why the refresh won't work right now so for forking that i changed the search-location
+
+
 
 #    WHEN USING MYSQL DATABASE
 #  profiles:

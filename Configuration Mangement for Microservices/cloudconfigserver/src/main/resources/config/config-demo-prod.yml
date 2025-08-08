@@ -1,5 +1,0 @@
-build:
-  id: 102
-  version: 1.0.2
-  name: "Native Production-Build"
-  type: "Native Production Build"
