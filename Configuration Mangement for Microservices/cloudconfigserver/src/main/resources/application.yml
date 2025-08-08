@@ -3,30 +3,30 @@ spring:
     name: configserver
 
 #    NOW USING MYSQL DATABASE
-  profiles:
-    active: jdbc
-  datasource:
-    url: jdbc:mysql://localhost:3306/configdb
-    username: root
-    password: mysql@#8456
-    driver-class-name: com.mysql.cj.jdbc.Driver
-  cloud:
-    config:
-      server:
-        jdbc:
-#          sql: SELECT PROP_KEY, PROP_VALUE from PROPERTIES where APPLICATION="config-demo" and PROFILE="dev" and LABEL="main"
-#          THIS ABOVE IS THE ORIGINAL SQL
-
-          sql: "SELECT PROP_KEY, PROP_VALUE from PROPERTIES where APPLICATION=? and PROFILE=? and LABEL=?"
-          default-label: main
-#    THIS WHEN WE USING GIT REPOSITORY FOR THE CONFIGURATIONS
+#  profiles:
+#    active: jdbc
+#  datasource:
+#    url: jdbc:mysql://localhost:3306/configdb
+#    username: root
+#    password: mysql@#8456
+#    driver-class-name: com.mysql.cj.jdbc.Driver
 #  cloud:
 #    config:
 #      server:
-#        git:
-#          uri: https://github.com/rio-aman/spring-cloud-server-app-configuration
-#          username: ${GIT_USER}
-#          password: ${GIT_TOKEN}
+#        jdbc:
+##          sql: SELECT PROP_KEY, PROP_VALUE from PROPERTIES where APPLICATION="config-demo" and PROFILE="dev" and LABEL="main"
+##          THIS ABOVE IS THE ORIGINAL SQL
+#
+#          sql: "SELECT PROP_KEY, PROP_VALUE from PROPERTIES where APPLICATION=? and PROFILE=? and LABEL=?"
+#          default-label: main
+#    THIS WHEN WE USING GIT REPOSITORY FOR THE CONFIGURATIONS
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/rio-aman/spring-cloud-server-app-configuration
+          username: ${GIT_USER}
+          password: ${GIT_TOKEN}
 server:
   port: 8888
 
