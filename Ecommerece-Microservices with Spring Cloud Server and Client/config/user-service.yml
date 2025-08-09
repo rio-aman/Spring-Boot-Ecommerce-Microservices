@@ -1,8 +1,8 @@
 spring:
   data:
     mongodb:
-      uri: mongodb://localhost:27017/userdb
-      database: userdb
+      uri: ${MONGODB_URL}
+      database: ${MONGODB_DATABASE_NAME}
 
 #  datasource:
 #    url: jdbc:postgresql://localhost:5432/userdb
