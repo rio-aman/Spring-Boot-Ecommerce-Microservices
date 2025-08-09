@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: configserver
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-location: file:///C:/Users/pc/Desktop/Ecom-Microservices/Ecommerece-Microservices with Spring Cloud Server and Client/config
+server:
+  port: 8888

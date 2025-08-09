@@ -5,6 +5,65 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="741320e4-bb3e-4b6a-bca6-6533c3224ee0" name="Changes" comment="applied the configuration for the product to run on the postgresql locally by docker and by remote (cloud neon serverless postgresql) and after it to mysql locally and to the cloud or remote in phpmyadmin using docker and all are written in the application yml file&#10;&#10;so here now the order is connected to postgresql by docker locally and product connect to mysql by docker (on remote) and at last the user is connected to the mongodb cloud as mongodb atlas">
+      <change afterPath="$PROJECT_DIR$/Ecommerece-Microservices with Spring Cloud Server and Client/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ecommerece-Microservices with Spring Cloud Server and Client/order/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ecommerece-Microservices with Spring Cloud Server and Client/order/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ecommerece-Microservices with Spring Cloud Server and Client/order/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ecommerece-Microservices with Spring Cloud Server and Client/order/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ecommerece-Microservices with Spring Cloud Server and Client/order/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ecommerece-Microservices with Spring Cloud Server and Client/order/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ecommerece-Microservices with Spring Cloud Server and Client/order/src/main/java/com/ecommerce/order/OrderApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ecommerece-Microservices with Spring Cloud Server and Client/order/src/main/java/com/ecommerce/order/controller/CartItemController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ecommerece-Microservices with Spring Cloud Server and Client/order/src/main/java/com/ecommerce/order/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ecommerece-Microservices with Spring Cloud Server and Client/order/src/main/java/com/ecommerce/order/dto/CartItemRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ecommerece-Microservices with Spring Cloud Server and Client/order/src/main/java/com/ecommerce/order/dto/OrderItemDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ecommerece-Microservices with Spring Cloud Server and Client/order/src/main/java/com/ecommerce/order/dto/OrderResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ecommerece-Microservices with Spring Cloud Server and Client/order/src/main/java/com/ecommerce/order/model/CartItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ecommerece-Microservices with Spring Cloud Server and Client/order/src/main/java/com/ecommerce/order/model/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ecommerece-Microservices with Spring Cloud Server and Client/order/src/main/java/com/ecommerce/order/model/OrderItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ecommerece-Microservices with Spring Cloud Server and Client/order/src/main/java/com/ecommerce/order/model/OrderStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ecommerece-Microservices with Spring Cloud Server and Client/order/src/main/java/com/ecommerce/order/repository/CartItemRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ecommerece-Microservices with Spring Cloud Server and Client/order/src/main/java/com/ecommerce/order/repository/OrderRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ecommerece-Microservices with Spring Cloud Server and Client/order/src/main/java/com/ecommerce/order/service/CartService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ecommerece-Microservices with Spring Cloud Server and Client/order/src/main/java/com/ecommerce/order/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ecommerece-Microservices with Spring Cloud Server and Client/order/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ecommerece-Microservices with Spring Cloud Server and Client/order/src/test/java/com/ecommerce/order/OrderApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ecommerece-Microservices with Spring Cloud Server and Client/product/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ecommerece-Microservices with Spring Cloud Server and Client/product/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ecommerece-Microservices with Spring Cloud Server and Client/product/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ecommerece-Microservices with Spring Cloud Server and Client/product/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ecommerece-Microservices with Spring Cloud Server and Client/product/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ecommerece-Microservices with Spring Cloud Server and Client/product/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ecommerece-Microservices with Spring Cloud Server and Client/product/src/main/java/com/ecommerce/product/ProductApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ecommerece-Microservices with Spring Cloud Server and Client/product/src/main/java/com/ecommerce/product/controller/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ecommerece-Microservices with Spring Cloud Server and Client/product/src/main/java/com/ecommerce/product/dto/ProductRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ecommerece-Microservices with Spring Cloud Server and Client/product/src/main/java/com/ecommerce/product/dto/ProductResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ecommerece-Microservices with Spring Cloud Server and Client/product/src/main/java/com/ecommerce/product/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ecommerece-Microservices with Spring Cloud Server and Client/product/src/main/java/com/ecommerce/product/repository/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ecommerece-Microservices with Spring Cloud Server and Client/product/src/main/java/com/ecommerce/product/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ecommerece-Microservices with Spring Cloud Server and Client/product/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ecommerece-Microservices with Spring Cloud Server and Client/product/src/test/java/com/ecommerce/product/ProductApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ecommerece-Microservices with Spring Cloud Server and Client/user/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ecommerece-Microservices with Spring Cloud Server and Client/user/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ecommerece-Microservices with Spring Cloud Server and Client/user/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ecommerece-Microservices with Spring Cloud Server and Client/user/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ecommerece-Microservices with Spring Cloud Server and Client/user/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ecommerece-Microservices with Spring Cloud Server and Client/user/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ecommerece-Microservices with Spring Cloud Server and Client/user/src/main/java/com/ecommerce/user/UserApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ecommerece-Microservices with Spring Cloud Server and Client/user/src/main/java/com/ecommerce/user/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ecommerece-Microservices with Spring Cloud Server and Client/user/src/main/java/com/ecommerce/user/dto/AddressDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ecommerece-Microservices with Spring Cloud Server and Client/user/src/main/java/com/ecommerce/user/dto/UserRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ecommerece-Microservices with Spring Cloud Server and Client/user/src/main/java/com/ecommerce/user/dto/UserResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ecommerece-Microservices with Spring Cloud Server and Client/user/src/main/java/com/ecommerce/user/model/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ecommerece-Microservices with Spring Cloud Server and Client/user/src/main/java/com/ecommerce/user/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ecommerece-Microservices with Spring Cloud Server and Client/user/src/main/java/com/ecommerce/user/model/UserRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ecommerece-Microservices with Spring Cloud Server and Client/user/src/main/java/com/ecommerce/user/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ecommerece-Microservices with Spring Cloud Server and Client/user/src/main/java/com/ecommerce/user/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ecommerece-Microservices with Spring Cloud Server and Client/user/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ecommerece-Microservices with Spring Cloud Server and Client/user/src/test/java/com/ecommerce/user/UserApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,29 +108,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.OrderApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ProductApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.UserApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/pc/Desktop/New folder (3)/Ecom-Microservices&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.annotationProcessors&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.ConfigserverApplication.executor": "Run",
+    "Application.OrderApplication.executor": "Run",
+    "Application.ProductApplication.executor": "Run",
+    "Application.UserApplication.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/pc/Desktop/Ecom-Microservices/Ecommerece-Microservices with Spring Cloud Server and Client",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\pc\Desktop\Ecom-Microservices\Ecommerece-Microservices with Spring Cloud Server and Client" />
+      <recent name="C:\Users\pc\Desktop\Ecom-Microservices\configserver\src\main\resources\config" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
@@ -79,7 +145,20 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Application.OrderApplication">
+  <component name="RunManager" selected="Application.ConfigserverApplication">
+    <configuration name="ConfigserverApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ecommerce.configserver.ConfigserverApplication" />
+      <module name="configserver" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ecommerce.configserver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="OrderApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ecommerce.order.OrderApplication" />
       <module name="order" />
@@ -122,6 +201,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.ProductApplication" />
+        <item itemvalue="Application.ConfigserverApplication" />
         <item itemvalue="Application.UserApplication" />
         <item itemvalue="Application.OrderApplication" />
       </list>
