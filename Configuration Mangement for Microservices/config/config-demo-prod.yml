@@ -1,5 +1,20 @@
 build:
   id: 1020
   version: 10.2.0
-  name: "Native Production-Build New"
+  name: "New Native Production-Build"
   type: "Native Production Build"
+
+#in this we are adding because this profile is active in cloud client
+spring:
+  #  this is for connecting with rabbitmq by actuator
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+  #this is for the actuator for enabling some end point
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"   # for all the endpoints

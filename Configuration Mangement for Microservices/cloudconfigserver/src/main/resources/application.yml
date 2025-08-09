@@ -4,6 +4,20 @@ spring:
 #  WHEN USING THE FILE BASED CONFIGURATION
   profiles:
     active: native
+#  this is for connecting with rabbitmq by actuator
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+#this is for the actuator for enabling some end point
+  management:
+    endpoints:
+      web:
+        exposure:
+#          include: "busrefresh"   # this is for specific
+          include: "*"   # for all the endpoints
+
   cloud:
     config:
       server:
@@ -11,7 +25,6 @@ spring:
 #          search-location: classpath:/config
 #          this i have changed because the classpath is static
           search-location: file:///C:/Users/pc/Desktop/Ecom-Microservices/Configuration Mangement for Microservices/config
-
 #### because
 #Spring Cloud Config has two main modes for native files:
 #
@@ -25,8 +38,6 @@ spring:
 #
 #  Right now, I am using in mode 1, which is static.
 # that's why the refresh won't work right now so for forking that i changed the search-location
-
-
 
 #    WHEN USING MYSQL DATABASE
 #  profiles:
