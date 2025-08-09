@@ -3,6 +3,11 @@ spring:
     name: configserver
   profiles:
     active: native
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
   cloud:
     config:
       server:
@@ -10,3 +15,9 @@ spring:
           search-location: file:///C:/Users/pc/Desktop/Ecom-Microservices/Ecommerece-Microservices with Spring Cloud Server and Client/config
 server:
   port: 8888
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

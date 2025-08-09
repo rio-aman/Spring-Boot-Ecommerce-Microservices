@@ -3,6 +3,11 @@ spring:
     mongodb:
       uri: ${MONGODB_URL}
       database: ${MONGODB_DATABASE_NAME}
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
 
 #  datasource:
 #    url: jdbc:postgresql://localhost:5432/userdb
@@ -18,4 +23,9 @@ spring:
 server:
   port: 8082
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
 
