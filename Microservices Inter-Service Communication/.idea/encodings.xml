@@ -3,6 +3,8 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/Synchronous communication using OpenFeign/consumer_by_open_feign/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Synchronous communication using OpenFeign/provider_by_open_feign/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Synchronous communication using Rest Client/consumer_by_rest_client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Synchronous communication using Rest Client/provider_by_rest_client/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/consumer/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/provider/src/main/java" charset="UTF-8" />
   </component>
