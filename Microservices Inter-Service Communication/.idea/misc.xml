@@ -4,8 +4,12 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
+        <option value="$PROJECT_DIR$/Synchronous communication using OpenFeign/consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/Synchronous communication using OpenFeign/provider/pom.xml" />
         <option value="$PROJECT_DIR$/consumer/pom.xml" />
         <option value="$PROJECT_DIR$/provider/pom.xml" />
+        <option value="$PROJECT_DIR$/Synchronous communication using OpenFeign/consumer_by_open_feign/pom.xml" />
+        <option value="$PROJECT_DIR$/Synchronous communication using OpenFeign/provider_by_open_feign/pom.xml" />
       </list>
     </option>
   </component>

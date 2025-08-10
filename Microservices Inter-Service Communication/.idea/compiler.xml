@@ -7,19 +7,28 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <processorPath>
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
+        <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
         </processorPath>
+        <module name="providerbyopenfeign" />
+        <module name="consumerbyopenfeign" />
         <module name="provider" />
         <module name="consumer" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="consumer (1)" target="21" />
+      <module name="provider (1)" target="21" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="consumer" options="-parameters" />
+      <module name="consumer (1)" options="-parameters" />
+      <module name="consumerbyopenfeign" options="-parameters" />
       <module name="provider" options="-parameters" />
+      <module name="provider (1)" options="-parameters" />
+      <module name="providerbyopenfeign" options="-parameters" />
     </option>
   </component>
 </project>
