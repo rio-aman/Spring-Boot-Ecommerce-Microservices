@@ -13,8 +13,17 @@
         <option value="$PROJECT_DIR$/Synchronous communication using Rest Client/provider_by_rest_client/pom.xml" />
         <option value="$PROJECT_DIR$/Synchronous communication using Rest Client/consumer_by_rest_client/pom.xml" />
         <option value="$PROJECT_DIR$/Synchronous communication using Web Client/consumer_by_web_client/pom.xml" />
+        <option value="$PROJECT_DIR$/Synchronous communication using Web Client/consumer_by_http_interfaces/pom.xml" />
+        <option value="$PROJECT_DIR$/Synchronous communication using Web Client/provider_by_http_interfaces/pom.xml" />
         <option value="$PROJECT_DIR$/Synchronous communication using Web Client/provider_by_web_client/pom.xml" />
+        <option value="$PROJECT_DIR$/Synchronous communication using Http Interfaces/consumer_by_http_interfaces/pom.xml" />
+        <option value="$PROJECT_DIR$/Synchronous communication using Http Interfaces/provider_by_http_interfaces/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/Synchronous communication using Web Client/consumer_by_http_interfaces/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_21" default="true" project-jdk-name="21" project-jdk-type="JavaSDK">

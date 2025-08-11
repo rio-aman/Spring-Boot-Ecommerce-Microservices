@@ -3,7 +3,7 @@
   <component name="CompilerConfiguration">
     <annotationProcessing>
       <profile default="true" name="Default" enabled="true" />
-      <profile name="Annotation profile for webclientprovider" enabled="true">
+      <profile name="Annotation profile for provider" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
@@ -15,6 +15,8 @@
         <module name="provider" />
         <module name="webclientconsumer" />
         <module name="webclientprovider" />
+        <module name="httpinterfaceconsumer" />
+        <module name="httpinterfaceprovider" />
         <module name="consumerbyopenfeign" />
         <module name="consumer" />
         <module name="providerbyrestclient" />
@@ -25,6 +27,7 @@
       <module name="consumerbyopenfeign (1)" target="21" />
       <module name="provider (1)" target="21" />
       <module name="providerbyrestclient (1)" target="21" />
+      <module name="webclientconsumer (1)" target="21" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -34,12 +37,15 @@
       <module name="consumerbyopenfeign" options="-parameters" />
       <module name="consumerbyopenfeign (1)" options="-parameters" />
       <module name="consumerbyrestclient" options="-parameters" />
+      <module name="httpinterfaceconsumer" options="-parameters" />
+      <module name="httpinterfaceprovider" options="-parameters" />
       <module name="provider" options="-parameters" />
       <module name="provider (1)" options="-parameters" />
       <module name="providerbyopenfeign" options="-parameters" />
       <module name="providerbyrestclient" options="-parameters" />
       <module name="providerbyrestclient (1)" options="-parameters" />
       <module name="webclientconsumer" options="-parameters" />
+      <module name="webclientconsumer (1)" options="-parameters" />
       <module name="webclientprovider" options="-parameters" />
     </option>
   </component>
