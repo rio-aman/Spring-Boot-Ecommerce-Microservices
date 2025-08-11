@@ -12,6 +12,8 @@
         <option value="$PROJECT_DIR$/Synchronous communication using OpenFeign/provider_by_open_feign/pom.xml" />
         <option value="$PROJECT_DIR$/Synchronous communication using Rest Client/provider_by_rest_client/pom.xml" />
         <option value="$PROJECT_DIR$/Synchronous communication using Rest Client/consumer_by_rest_client/pom.xml" />
+        <option value="$PROJECT_DIR$/Synchronous communication using Web Client/consumer_by_web_client/pom.xml" />
+        <option value="$PROJECT_DIR$/Synchronous communication using Web Client/provider_by_web_client/pom.xml" />
       </list>
     </option>
   </component>

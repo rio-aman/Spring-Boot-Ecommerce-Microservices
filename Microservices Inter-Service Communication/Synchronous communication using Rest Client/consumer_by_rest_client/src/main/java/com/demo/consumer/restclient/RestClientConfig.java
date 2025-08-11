@@ -12,5 +12,4 @@ public class RestClientConfig {
         return builder.baseUrl("http://localhost:8081")
                 .build();
     }
-
 }
