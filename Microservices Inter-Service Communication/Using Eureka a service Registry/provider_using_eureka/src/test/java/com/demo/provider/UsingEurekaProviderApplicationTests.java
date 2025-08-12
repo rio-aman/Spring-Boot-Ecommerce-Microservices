@@ -1,10 +1,10 @@
-package com.demo.consumer;
+package com.demo.provider;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class WebClientConsumerApplicationTests {
+class UsingEurekaProviderApplicationTests {
 
 	@Test
 	void contextLoads() {
