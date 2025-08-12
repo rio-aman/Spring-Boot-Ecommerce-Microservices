@@ -10,6 +10,9 @@
     <file url="file://$PROJECT_DIR$/Synchronous communication using Web Client/consumer_by_web_client/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Synchronous communication using Web Client/provider_by_http_interfaces/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Synchronous communication using Web Client/provider_by_web_client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Using Eureka a service Registry/consumer_using_eureka/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Using Eureka a service Registry/eureka/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Using Eureka a service Registry/provider_using_eureka/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/consumer/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/provider/src/main/java" charset="UTF-8" />
   </component>
