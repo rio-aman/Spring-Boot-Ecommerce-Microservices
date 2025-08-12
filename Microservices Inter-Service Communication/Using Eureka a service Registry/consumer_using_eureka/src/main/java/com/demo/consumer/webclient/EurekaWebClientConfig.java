@@ -8,11 +8,11 @@ import org.springframework.web.reactive.function.client.WebClient;
 @Configuration
 public class EurekaWebClientConfig {
 
-    @Bean
-    @LoadBalanced
-    public WebClient.Builder loadBalancedWebClientBuilder() {
-        return WebClient.builder();
-    }
+//    @Bean
+//    @LoadBalanced
+//    public WebClient.Builder loadBalancedWebClientBuilder() {
+//        return WebClient.builder();
+//    }
 
     @Bean
     public WebClient webClient(WebClient.Builder builder){
