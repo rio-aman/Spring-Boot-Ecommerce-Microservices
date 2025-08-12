@@ -21,6 +21,9 @@
         <option value="$PROJECT_DIR$/Using Eureka a service Registry/eureka/pom.xml" />
         <option value="$PROJECT_DIR$/Using Eureka a service Registry/consumer_using_eureka/pom.xml" />
         <option value="$PROJECT_DIR$/Using Eureka a service Registry/provider_using_eureka/pom.xml" />
+        <option value="$PROJECT_DIR$/Using Eureka a service Registry/Eureka with Open feign/eureka_open_feign/pom.xml" />
+        <option value="$PROJECT_DIR$/Using Eureka a service Registry/Eureka with Open feign/consumer_using_eureka/pom.xml" />
+        <option value="$PROJECT_DIR$/Using Eureka a service Registry/Eureka with Open feign/provider_using_eureka/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

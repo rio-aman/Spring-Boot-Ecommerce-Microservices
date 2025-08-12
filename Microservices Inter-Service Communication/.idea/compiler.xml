@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="eureka" />
+        <module name="openfeigneureka" />
       </profile>
       <profile name="Annotation profile for eurekausingconsumer" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -16,16 +17,18 @@
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
         </processorPath>
+        <module name="providerbyopenfeign" />
+        <module name="webclientconsumer" />
+        <module name="openfeigneurekaprovider" />
+        <module name="webclientprovider" />
+        <module name="openfeigneurekaconsumer" />
+        <module name="consumerbyopenfeign" />
         <module name="eurekausingconsumer" />
         <module name="eurekausingprovider" />
-        <module name="providerbyopenfeign" />
         <module name="consumerbyrestclient" />
         <module name="provider" />
-        <module name="webclientconsumer" />
-        <module name="webclientprovider" />
         <module name="httpinterfaceconsumer" />
         <module name="httpinterfaceprovider" />
-        <module name="consumerbyopenfeign" />
         <module name="consumer" />
         <module name="providerbyrestclient" />
       </profile>
@@ -33,6 +36,7 @@
     <bytecodeTargetLevel>
       <module name="consumer (1)" target="21" />
       <module name="consumerbyopenfeign (1)" target="21" />
+      <module name="eureka (1)" target="21" />
       <module name="provider (1)" target="21" />
       <module name="providerbyrestclient (1)" target="21" />
       <module name="webclientconsumer (1)" target="21" />
@@ -47,10 +51,14 @@
       <module name="consumerbyopenfeign (1)" options="-parameters" />
       <module name="consumerbyrestclient" options="-parameters" />
       <module name="eureka" options="-parameters" />
+      <module name="eureka (1)" options="-parameters" />
       <module name="eurekausingconsumer" options="-parameters" />
       <module name="eurekausingprovider" options="-parameters" />
       <module name="httpinterfaceconsumer" options="-parameters" />
       <module name="httpinterfaceprovider" options="-parameters" />
+      <module name="openfeigneureka" options="-parameters" />
+      <module name="openfeigneurekaconsumer" options="-parameters" />
+      <module name="openfeigneurekaprovider" options="-parameters" />
       <module name="provider" options="-parameters" />
       <module name="provider (1)" options="-parameters" />
       <module name="providerbyopenfeign" options="-parameters" />
