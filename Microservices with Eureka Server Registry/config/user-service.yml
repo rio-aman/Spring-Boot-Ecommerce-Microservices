@@ -36,3 +36,10 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
 
+logging:
+  file:
+    name: logs/${spring.application.name}.log
+  logback:
+    rollingpolicy:
+      max-file-size: 3MB
+      max-history: 5
