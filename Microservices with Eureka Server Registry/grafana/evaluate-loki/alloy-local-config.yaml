@@ -21,6 +21,56 @@ loki.source.docker "flog_scrape" {
 	refresh_interval = "5s"
 }
 
+# these are adding so then loki can get the logs of the file or can the application services logs through the logs generated
+#  in the logs folder where the logs of the services with their name generating (collecting the logs of respective services from its log in logs folder)
+
+local.file_match "system_logs" {
+    path_targets = [{"__path__" = "/var/log/*.log"}]
+    sync_period = "5s"
+}
+
+#Purpose: Finds log files in /var/log ending with .log.
+#path_targets: A list of file matching patterns. Here, it’s looking for /var/log/*.log.
+#sync_period = "5s": Every 5 seconds, it re-checks the directory for new/removed log files.
+#Why local.file_match? It creates a reusable “file list” object you can pass to log scrapers.
+
+loki.source.file "system_file_scrape" {
+    targets       = local.file_match.system_logs.targets
+    forward_to    = [loki.write.default.receiver]
+    tail_from_end = true
+}
+
+#Purpose: Reads the files matched by system_logs and sends them to Loki.
+#targets: Points to the file list from the previous local.file_match.
+#forward_to: Sends the scraped logs to Loki’s write endpoint (loki.write.default.receiver).
+#tail_from_end = true: When starting, it does not read old logs; it starts at the end of the file (like tail -f).
+
+#and same this happening for other first match the by pointing by targets and scrap the logs and send to loki
+
+local.file_match "loki_app_logs" {
+    path_targets = [{"__path__" = "/log/*.log"}]
+    sync_period = "5s"
+}
+
+loki.source.file "loki_app_file_scrape" {
+    targets       = local.file_match.loki_app_logs.targets
+    forward_to    = [loki.write.default.receiver]
+    tail_from_end = true
+}
+
+local.file_match "parent_app_logs" {
+    path_targets = [{"__path__" = "/log-parent/*.log"}]
+    sync_period = "5s"
+}
+
+loki.source.file "parent_app_file_scrape" {
+    targets       = local.file_match.parent_app_logs.targets
+    forward_to    = [loki.write.default.receiver]
+    tail_from_end = true
+}
+
+# this is the end for the getting logs of the services
+
 loki.write "default" {
 	endpoint {
 		url       = "http://gateway:3100/loki/api/v1/push"
