@@ -5,15 +5,19 @@ spring:
     gateway:
       routes:
         - id: product-service
-          uri: http://localhost:8081
+          #          uri: http://localhost:8081
+          uri: lb://PRODUCT-SERVICE
           predicates:
             - Path=/api/products/**
         - id: user-service
-          uri: http://localhost:8082
+          #          uri: http://localhost:8082
+          uri: lb://USER-SERVICE
+          # as these port can be change so use eureka and service should be load balanced so use lb://service name and same will do for other services also
           predicates:
             - Path=/api/users/**
         - id: order-&-cart-service
-          uri: http://localhost:8083
+          #          uri: http://localhost:8083
+          uri: lb://ORDER-CART-SERVICE
           predicates:
             - Path=/api/orders/**, /api/cart/**
 

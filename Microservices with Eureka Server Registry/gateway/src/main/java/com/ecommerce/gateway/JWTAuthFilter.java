@@ -8,7 +8,7 @@ import org.springframework.web.server.WebFilter;
 import org.springframework.web.server.WebFilterChain;
 import reactor.core.publisher.Mono;
 
-@Component  // this is important as by this makes Spring register it
+//@Component  // this is important as by this makes Spring register it
 public class JWTAuthFilter implements WebFilter {
     @Override
     public Mono<Void> filter(ServerWebExchange exchange, WebFilterChain chain) {
