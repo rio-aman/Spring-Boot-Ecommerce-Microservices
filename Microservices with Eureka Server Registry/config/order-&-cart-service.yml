@@ -30,6 +30,10 @@ management:
     web:
       exposure:
         include: "*"
+  tracing:
+    sampling:
+      probability: 1.0
+
 
 app:
   message: "Hello Order Placed Successfully"
