@@ -5,10 +5,10 @@ import org.springframework.cloud.gateway.route.builder.RouteLocatorBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-@Configuration
+//@Configuration
 public class GatewayConfig {
 
-    @Bean
+//    @Bean
     public RouteLocator customRouteLocator(RouteLocatorBuilder builder){
         return builder.routes()
                 .route("product-service", r -> r
@@ -18,7 +18,7 @@ public class GatewayConfig {
                         .path("/api/users/**")
                         .uri("lb://USER-SERVICE"))
                 .route("order-&-cart-service", r -> r
-                        .path("/api/orders/**"," /api/cart/**")
+                        .path("/api/orders/**","/api/cart/**")
                         .uri("lb://ORDER-CART-SERVICE"))
 
                     // when want to switch the path ore rewrite the path means removing /api then the below code is written
