@@ -1,0 +1,56 @@
+spring:
+  datasource:
+#    url: ${POSTGRESQL_URL}
+#    username: ${POSTGRESQL_USERNAME}
+#    password: ${POSTGRESQL_PASSWORD}
+
+    url: jdbc:postgresql://ep-soft-recipe-aevurt0x-pooler.c-2.us-east-2.aws.neon.tech/order?sslmode=require&channel_binding=require'
+    username: neondb_owner
+    password: npg_LKG04zXljxqJ
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    properties:
+      hibernate:
+        format_sql: true
+
+server:
+  port: 8083
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  tracing:
+    sampling:
+      probability: 1.0
+
+
+app:
+  message: "Hello Order Placed Successfully"
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    prefer-ip-address: true
+
+logging:
+  file:
+    name: logs/${spring.application.name}.log
+  logback:
+    rollingpolicy:
+      max-file-size: 3MB
+      max-history: 5
