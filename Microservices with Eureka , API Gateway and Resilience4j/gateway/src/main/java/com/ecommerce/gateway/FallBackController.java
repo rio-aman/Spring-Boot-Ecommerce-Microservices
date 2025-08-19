@@ -23,11 +23,4 @@ public class FallBackController {
                 .body(Collections.singletonList("User Service Is Unavailable Please Try again After Sometime"));
     }
 
-    @GetMapping("/fallback/orders")
-    public ResponseEntity<List<String>> ordersFallBack(){
-        return ResponseEntity.status(HttpStatus.SERVICE_UNAVAILABLE)
-                .body(Collections.singletonList("Either Cart Service Or Order Service Is Unavailable Please Try again After Sometime"));
-    }
-
-
 }

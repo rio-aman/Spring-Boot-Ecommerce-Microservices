@@ -61,10 +61,6 @@ public class GatewayConfig {
                         .uri("lb://USER-SERVICE"))
                 .route("order-&-cart-service", r -> r
                         .path("/api/orders/**","/api/cart/**")
-                        .filters(f -> f.circuitBreaker
-                                (config -> config
-                                        .setName("ecomBreaker")
-                                        .setFallbackUri("forward:/fallback/orders")))
                         .uri("lb://ORDER-CART-SERVICE"))
 
                 // above using the circuit breaker for Gateway Service
