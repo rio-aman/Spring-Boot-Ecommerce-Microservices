@@ -24,7 +24,7 @@ public class CartService {
     private final ProductServiceClient productServiceClient;
     private final UserServiceClient userServiceClient;
 
-    @CircuitBreaker(name = "productService")
+    @CircuitBreaker(name = "productService", fallbackMethod = "addToCartFallBack")
     public boolean addToCart(String userId, CartItemRequest request) {
         // look for the product
         ProductResponse productResponse = productServiceClient.getProductDetails(request.getProductId());
@@ -52,6 +52,12 @@ public class CartService {
             cartItemRepository.save(cartItem);
         }
         return true;
+    }
+
+//    fall back method for printing the better message instead of internal server error as it's not good
+    public boolean addToCartFallBack(String userId, CartItemRequest request, Exception exception){
+        exception.printStackTrace();
+        return false;
     }
 
     public boolean deleteItemFromCart(String userId, String productId) {

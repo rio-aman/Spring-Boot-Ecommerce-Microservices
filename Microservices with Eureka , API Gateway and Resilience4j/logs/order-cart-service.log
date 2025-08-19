@@ -1546,3 +1546,586 @@ java.lang.IllegalArgumentException: Service Instance cannot be null, serviceId: 
 	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
 
 2025-08-19T11:07:56.119+05:30  INFO 12236 --- [order-cart-service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-19T11:12:56.143+05:30  INFO 12236 --- [order-cart-service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-19T11:17:56.171+05:30  INFO 12236 --- [order-cart-service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-19T11:22:56.193+05:30  INFO 12236 --- [order-cart-service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-19T11:27:56.261+05:30  INFO 12236 --- [order-cart-service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-19T11:32:56.340+05:30  INFO 12236 --- [order-cart-service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-19T11:37:56.403+05:30  INFO 12236 --- [order-cart-service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-19T11:42:56.494+05:30  INFO 12236 --- [order-cart-service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-19T11:47:56.546+05:30  INFO 12236 --- [order-cart-service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-19T11:52:56.693+05:30  INFO 12236 --- [order-cart-service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-19T11:55:50.485+05:30  INFO 12236 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application ORDER-CART-SERVICE with eureka with status DOWN
+2025-08-19T11:55:50.486+05:30  INFO 12236 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755584750486, current=DOWN, previous=UP]
+2025-08-19T11:55:50.488+05:30  INFO 12236 --- [order-cart-service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-CART-SERVICE/DESKTOP-IEJSSAR.mshome.net:order-cart-service:8083: registering service...
+2025-08-19T11:55:50.558+05:30  INFO 12236 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-19T11:55:50.602+05:30  INFO 12236 --- [order-cart-service] [tomcat-shutdown] [                                                 ] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-19T11:55:50.931+05:30  INFO 12236 --- [order-cart-service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-CART-SERVICE/DESKTOP-IEJSSAR.mshome.net:order-cart-service:8083 - registration status: 204
+2025-08-19T11:55:52.246+05:30  INFO 12236 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2025-08-19T11:55:52.248+05:30  INFO 12236 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2025-08-19T11:55:52.254+05:30  INFO 12236 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] o.s.i.a.i.AmqpInboundChannelAdapter      : stopped bean 'inbound.springCloudBus.anonymous.8puyCOcMQOux3ZEOIUX0dg'
+2025-08-19T11:55:52.321+05:30  INFO 12236 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] o.s.c.stream.binder.BinderErrorChannel   : Channel 'order-cart-service.rabbit-1357959324.springCloudBusInput.errors' has 1 subscriber(s).
+2025-08-19T11:55:52.324+05:30  INFO 12236 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] o.s.c.stream.binder.BinderErrorChannel   : Channel 'order-cart-service.rabbit-1357959324.springCloudBusInput.errors' has 0 subscriber(s).
+2025-08-19T11:55:52.591+05:30  INFO 12236 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] o.s.i.endpoint.EventDrivenConsumer       : Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2025-08-19T11:55:52.593+05:30  INFO 12236 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] o.s.i.channel.PublishSubscribeChannel    : Channel 'order-cart-service.errorChannel' has 0 subscriber(s).
+2025-08-19T11:55:52.595+05:30  INFO 12236 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] o.s.i.endpoint.EventDrivenConsumer       : stopped bean '_org.springframework.integration.errorLogger'
+2025-08-19T11:55:52.732+05:30  INFO 12236 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-19T11:55:52.844+05:30  INFO 12236 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-19T11:55:55.341+05:30  INFO 12236 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-19T11:55:55.803+05:30  INFO 12236 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-08-19T11:55:58.813+05:30  INFO 12236 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-08-19T11:55:58.985+05:30  INFO 12236 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/} exception=I/O error on DELETE request for "http://localhost:8761/eureka/apps/ORDER-CART-SERVICE/DESKTOP-IEJSSAR.mshome.net:order-cart-service:8083": Connect to http://localhost:8761 failed: Connection refused: getsockopt stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8761/eureka/apps/ORDER-CART-SERVICE/DESKTOP-IEJSSAR.mshome.net:order-cart-service:8083": Connect to http://localhost:8761 failed: Connection refused: getsockopt
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:906)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:841)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:702)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.cancel(RestTemplateEurekaHttpClient.java:100)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:919)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:900)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:202)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:195)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:387)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:134)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:211)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:798)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:748)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1474)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:707)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1467)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1219)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1180)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:179)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1126)
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:147)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:116)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:8761 failed: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:205)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:71)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:117)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$2(RestTemplateTransportClientFactory.java:145)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:900)
+	... 37 more
+
+2025-08-19T11:55:58.986+05:30  WARN 12236 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/ORDER-CART-SERVICE/DESKTOP-IEJSSAR.mshome.net:order-cart-service:8083": Connect to http://localhost:8761 failed: Connection refused: getsockopt
+2025-08-19T11:55:59.107+05:30  INFO 12236 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on DELETE request for "http://localhost:8761/eureka/apps/ORDER-CART-SERVICE/DESKTOP-IEJSSAR.mshome.net:order-cart-service:8083": Connect to http://localhost:8761 failed: Connection refused: getsockopt stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8761/eureka/apps/ORDER-CART-SERVICE/DESKTOP-IEJSSAR.mshome.net:order-cart-service:8083": Connect to http://localhost:8761 failed: Connection refused: getsockopt
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:906)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:841)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:702)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.cancel(RestTemplateEurekaHttpClient.java:100)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:919)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:900)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:202)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:195)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:387)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:134)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:211)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:798)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:748)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1474)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:707)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1467)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1219)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1180)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:179)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1126)
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:147)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:116)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.apache.hc.client5.http.HttpHostConnectException: Connect to http://localhost:8761 failed: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:205)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:99)
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:71)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:117)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateTransportClientFactory.lambda$restTemplate$2(RestTemplateTransportClientFactory.java:145)
+	at org.springframework.http.client.InterceptingClientHttpRequest$InterceptingRequestExecution.execute(InterceptingClientHttpRequest.java:88)
+	at org.springframework.http.client.InterceptingClientHttpRequest.executeInternal(InterceptingClientHttpRequest.java:72)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:900)
+	... 38 more
+
+2025-08-19T11:55:59.108+05:30  WARN 12236 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/ORDER-CART-SERVICE/DESKTOP-IEJSSAR.mshome.net:order-cart-service:8083": Connect to http://localhost:8761 failed: Connection refused: getsockopt
+2025-08-19T11:55:59.108+05:30 ERROR 12236 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-CART-SERVICE/DESKTOP-IEJSSAR.mshome.net:order-cart-service:8083 - de-registration failedCannot execute request on any known server
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:919) ~[eureka-client-2.0.4.jar:2.0.4]
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:900) ~[eureka-client-2.0.4.jar:2.0.4]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:202) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:195) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:387) ~[spring-cloud-context-4.3.0.jar:4.3.0]
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:134) ~[spring-cloud-context-4.3.0.jar:4.3.0]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:211) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:798) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:748) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1474) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:707) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1467) ~[spring-beans-6.2.9.jar:6.2.9]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1219) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1180) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:179) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1126) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:147) ~[spring-boot-3.5.4.jar:3.5.4]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:116) ~[spring-boot-3.5.4.jar:3.5.4]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-08-19T11:55:59.122+05:30  INFO 12236 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-08-19T19:24:53.600+05:30  INFO 17012 --- [order-cart-service] [main] [                                                 ] com.ecommerce.order.OrderApplication     : Starting OrderApplication using Java 21.0.8 with PID 17012 (C:\Users\pc\Desktop\Ecom-Microservices\Microservices with Eureka , API Gateway and Resilience4j\order\target\classes started by pc in C:\Users\pc\Desktop\Ecom-Microservices\Microservices with Eureka , API Gateway and Resilience4j)
+2025-08-19T19:24:53.612+05:30  INFO 17012 --- [order-cart-service] [main] [                                                 ] com.ecommerce.order.OrderApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-08-19T19:24:53.789+05:30  INFO 17012 --- [order-cart-service] [main] [                                                 ] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2025-08-19T19:24:53.790+05:30  INFO 17012 --- [order-cart-service] [main] [                                                 ] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=order-cart-service, profiles=[default], label=null, version=null, state=null
+2025-08-19T19:25:01.167+05:30  INFO 17012 --- [order-cart-service] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-19T19:25:01.701+05:30  INFO 17012 --- [order-cart-service] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 502 ms. Found 2 JPA repository interfaces.
+2025-08-19T19:25:02.696+05:30  INFO 17012 --- [order-cart-service] [main] [                                                 ] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2025-08-19T19:25:02.716+05:30  INFO 17012 --- [order-cart-service] [main] [                                                 ] faultConfiguringBeanFactoryPostProcessor : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2025-08-19T19:25:03.974+05:30  INFO 17012 --- [order-cart-service] [main] [                                                 ] o.s.cloud.context.scope.GenericScope     : BeanFactory id=80a882b3-a956-38ab-af2d-ba96699c2ade
+2025-08-19T19:25:15.671+05:30  INFO 17012 --- [order-cart-service] [main] [                                                 ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8083 (http)
+2025-08-19T19:25:15.763+05:30  INFO 17012 --- [order-cart-service] [main] [                                                 ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-19T19:25:15.764+05:30  INFO 17012 --- [order-cart-service] [main] [                                                 ] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-19T19:25:16.472+05:30  INFO 17012 --- [order-cart-service] [main] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-19T19:25:16.474+05:30  INFO 17012 --- [order-cart-service] [main] [                                                 ] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 22677 ms
+2025-08-19T19:25:29.878+05:30  INFO 17012 --- [order-cart-service] [main] [                                                 ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-19T19:25:30.245+05:30  INFO 17012 --- [order-cart-service] [main] [                                                 ] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-19T19:25:30.536+05:30  INFO 17012 --- [order-cart-service] [main] [                                                 ] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-19T19:33:08.765+05:30  INFO 17012 --- [order-cart-service] [main] [                                                 ] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-19T19:33:09.194+05:30  INFO 17012 --- [order-cart-service] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-19T19:33:13.967+05:30  INFO 17012 --- [order-cart-service] [main] [                                                 ] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@34986491
+2025-08-19T19:33:13.978+05:30  INFO 17012 --- [order-cart-service] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-19T19:33:14.355+05:30  WARN 17012 --- [order-cart-service] [main] [                                                 ] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-19T19:33:15.328+05:30  INFO 17012 --- [order-cart-service] [main] [                                                 ] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-19T19:33:28.111+05:30  INFO 17012 --- [order-cart-service] [main] [                                                 ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-19T19:33:31.195+05:30  INFO 17012 --- [order-cart-service] [main] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-19T19:33:39.635+05:30  WARN 17012 --- [order-cart-service] [main] [                                                 ] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-19T19:33:48.317+05:30  WARN 17012 --- [order-cart-service] [main] [                                                 ] c.f.c.c.BeanFactoryAwareFunctionRegistry : Failed to locate function 'busConsumer' for function definition 'busConsumer'. Returning null.
+2025-08-19T19:33:48.572+05:30  INFO 17012 --- [order-cart-service] [main] [                                                 ] o.s.c.s.m.DirectWithAttributesChannel    : Channel 'order-cart-service.springCloudBusInput' has 1 subscriber(s).
+2025-08-19T19:33:50.246+05:30  INFO 17012 --- [order-cart-service] [main] [                                                 ] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-08-19T19:33:50.646+05:30  WARN 17012 --- [order-cart-service] [main] [                                                 ] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-08-19T19:33:50.850+05:30  INFO 17012 --- [order-cart-service] [main] [                                                 ] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 35 endpoints beneath base path '/actuator'
+2025-08-19T19:33:51.540+05:30  INFO 17012 --- [order-cart-service] [main] [                                                 ] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2025-08-19T19:33:51.541+05:30  INFO 17012 --- [order-cart-service] [main] [                                                 ] o.s.i.channel.PublishSubscribeChannel    : Channel 'order-cart-service.errorChannel' has 1 subscriber(s).
+2025-08-19T19:33:51.543+05:30  INFO 17012 --- [order-cart-service] [main] [                                                 ] o.s.i.endpoint.EventDrivenConsumer       : started bean '_org.springframework.integration.errorLogger'
+2025-08-19T19:33:51.763+05:30  INFO 17012 --- [order-cart-service] [main] [                                                 ] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-08-19T19:33:51.830+05:30  INFO 17012 --- [order-cart-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-08-19T19:33:51.842+05:30  INFO 17012 --- [order-cart-service] [main] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-19T19:33:51.866+05:30  INFO 17012 --- [order-cart-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-08-19T19:33:51.867+05:30  INFO 17012 --- [order-cart-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-08-19T19:33:51.868+05:30  INFO 17012 --- [order-cart-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-08-19T19:33:51.869+05:30  INFO 17012 --- [order-cart-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-08-19T19:33:51.869+05:30  INFO 17012 --- [order-cart-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-08-19T19:33:51.869+05:30  INFO 17012 --- [order-cart-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-08-19T19:33:51.870+05:30  INFO 17012 --- [order-cart-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-08-19T19:33:52.782+05:30  INFO 17012 --- [order-cart-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-08-19T19:33:52.792+05:30  INFO 17012 --- [order-cart-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-08-19T19:33:52.809+05:30  INFO 17012 --- [order-cart-service] [main] [                                                 ] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-08-19T19:33:52.836+05:30  INFO 17012 --- [order-cart-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1755612232835 with initial instances count: 1
+2025-08-19T19:33:52.876+05:30  INFO 17012 --- [order-cart-service] [main] [                                                 ] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ORDER-CART-SERVICE with eureka with status UP
+2025-08-19T19:33:52.878+05:30  INFO 17012 --- [order-cart-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755612232878, current=UP, previous=STARTING]
+2025-08-19T19:33:52.883+05:30  INFO 17012 --- [order-cart-service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-CART-SERVICE/DESKTOP-IEJSSAR.mshome.net:order-cart-service:8083: registering service...
+2025-08-19T19:33:52.899+05:30  INFO 17012 --- [order-cart-service] [main] [                                                 ] o.s.c.s.binder.DefaultBinderFactory      : Creating binder: rabbit
+2025-08-19T19:33:52.900+05:30  INFO 17012 --- [order-cart-service] [main] [                                                 ] o.s.c.s.binder.DefaultBinderFactory      : Constructing binder child context for rabbit
+2025-08-19T19:33:53.147+05:30  INFO 17012 --- [order-cart-service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-CART-SERVICE/DESKTOP-IEJSSAR.mshome.net:order-cart-service:8083 - registration status: 204
+2025-08-19T19:33:53.437+05:30  INFO 17012 --- [order-cart-service] [main] [                                                 ] o.s.c.s.binder.DefaultBinderFactory      : Caching the binder: rabbit
+2025-08-19T19:33:53.477+05:30  INFO 17012 --- [order-cart-service] [main] [                                                 ] c.s.b.r.p.RabbitExchangeQueueProvisioner : declaring queue for inbound: springCloudBus.anonymous.n6r2OpXsQoGdosGrobLU5A, bound to: springCloudBus
+2025-08-19T19:33:53.496+05:30  INFO 17012 --- [order-cart-service] [main] [                                                 ] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2025-08-19T19:33:54.047+05:30  INFO 17012 --- [order-cart-service] [main] [                                                 ] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#67e321e0:0/SimpleConnection@70d36074 [delegate=amqp://guest@127.0.0.1:5672/, localPort=55048]
+2025-08-19T19:33:56.058+05:30  INFO 17012 --- [order-cart-service] [main] [                                                 ] o.s.c.stream.binder.BinderErrorChannel   : Channel 'rabbit-1966640882.springCloudBusInput.errors' has 1 subscriber(s).
+2025-08-19T19:33:56.063+05:30  INFO 17012 --- [order-cart-service] [main] [                                                 ] o.s.c.stream.binder.BinderErrorChannel   : Channel 'rabbit-1966640882.springCloudBusInput.errors' has 2 subscriber(s).
+2025-08-19T19:33:56.211+05:30  INFO 17012 --- [order-cart-service] [main] [                                                 ] o.s.i.a.i.AmqpInboundChannelAdapter      : started bean 'inbound.springCloudBus.anonymous.n6r2OpXsQoGdosGrobLU5A'
+2025-08-19T19:33:56.336+05:30  INFO 17012 --- [order-cart-service] [main] [                                                 ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8083 (http) with context path '/'
+2025-08-19T19:33:56.339+05:30  INFO 17012 --- [order-cart-service] [main] [                                                 ] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8083
+2025-08-19T19:33:56.939+05:30  INFO 17012 --- [order-cart-service] [main] [                                                 ] com.ecommerce.order.OrderApplication     : Started OrderApplication in 548.627 seconds (process running for 552.189)
+2025-08-19T19:33:58.570+05:30  INFO 17012 --- [order-cart-service] [http-nio-8083-exec-2] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-19T19:33:58.571+05:30  INFO 17012 --- [order-cart-service] [http-nio-8083-exec-2] [                                                 ] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-19T19:33:58.580+05:30  INFO 17012 --- [order-cart-service] [http-nio-8083-exec-2] [                                                 ] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2025-08-19T19:36:36.344+05:30  INFO 17012 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application ORDER-CART-SERVICE with eureka with status DOWN
+2025-08-19T19:36:36.360+05:30  INFO 17012 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755612396360, current=DOWN, previous=UP]
+2025-08-19T19:36:36.363+05:30  INFO 17012 --- [order-cart-service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-CART-SERVICE/DESKTOP-IEJSSAR.mshome.net:order-cart-service:8083: registering service...
+2025-08-19T19:36:36.407+05:30  INFO 17012 --- [order-cart-service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-CART-SERVICE/DESKTOP-IEJSSAR.mshome.net:order-cart-service:8083 - registration status: 204
+2025-08-19T19:36:36.482+05:30  INFO 17012 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-19T19:36:36.503+05:30  INFO 17012 --- [order-cart-service] [tomcat-shutdown] [                                                 ] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-19T19:36:36.772+05:30  INFO 17012 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2025-08-19T19:36:37.179+05:30  INFO 17012 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2025-08-19T19:36:37.182+05:30  INFO 17012 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] o.s.i.a.i.AmqpInboundChannelAdapter      : stopped bean 'inbound.springCloudBus.anonymous.n6r2OpXsQoGdosGrobLU5A'
+2025-08-19T19:36:37.205+05:30  INFO 17012 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] o.s.c.stream.binder.BinderErrorChannel   : Channel 'order-cart-service.rabbit-1966640882.springCloudBusInput.errors' has 1 subscriber(s).
+2025-08-19T19:36:37.212+05:30  INFO 17012 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] o.s.c.stream.binder.BinderErrorChannel   : Channel 'order-cart-service.rabbit-1966640882.springCloudBusInput.errors' has 0 subscriber(s).
+2025-08-19T19:36:37.734+05:30  INFO 17012 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] o.s.i.endpoint.EventDrivenConsumer       : Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2025-08-19T19:36:37.746+05:30  INFO 17012 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] o.s.i.channel.PublishSubscribeChannel    : Channel 'order-cart-service.errorChannel' has 0 subscriber(s).
+2025-08-19T19:36:37.776+05:30  INFO 17012 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] o.s.i.endpoint.EventDrivenConsumer       : stopped bean '_org.springframework.integration.errorLogger'
+2025-08-19T19:36:38.116+05:30  INFO 17012 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-19T19:36:38.156+05:30  INFO 17012 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-19T19:36:40.890+05:30  INFO 17012 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-19T19:36:41.055+05:30  INFO 17012 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-08-19T19:36:44.071+05:30  INFO 17012 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-08-19T19:36:44.323+05:30  INFO 17012 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-CART-SERVICE/DESKTOP-IEJSSAR.mshome.net:order-cart-service:8083 - deregister  status: 200
+2025-08-19T19:36:44.324+05:30  INFO 17012 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-08-19T19:37:28.724+05:30  INFO 6540 --- [order-cart-service] [main] [                                                 ] com.ecommerce.order.OrderApplication     : Starting OrderApplication using Java 21.0.8 with PID 6540 (C:\Users\pc\Desktop\Ecom-Microservices\Microservices with Eureka , API Gateway and Resilience4j\order\target\classes started by pc in C:\Users\pc\Desktop\Ecom-Microservices\Microservices with Eureka , API Gateway and Resilience4j)
+2025-08-19T19:37:28.746+05:30  INFO 6540 --- [order-cart-service] [main] [                                                 ] com.ecommerce.order.OrderApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-08-19T19:37:29.024+05:30  INFO 6540 --- [order-cart-service] [main] [                                                 ] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2025-08-19T19:37:29.025+05:30  INFO 6540 --- [order-cart-service] [main] [                                                 ] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=order-cart-service, profiles=[default], label=null, version=null, state=null
+2025-08-19T19:37:52.269+05:30  INFO 6540 --- [order-cart-service] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-19T19:37:53.617+05:30  INFO 6540 --- [order-cart-service] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1274 ms. Found 2 JPA repository interfaces.
+2025-08-19T19:37:56.495+05:30  INFO 6540 --- [order-cart-service] [main] [                                                 ] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2025-08-19T19:37:56.598+05:30  INFO 6540 --- [order-cart-service] [main] [                                                 ] faultConfiguringBeanFactoryPostProcessor : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2025-08-19T19:37:59.267+05:30  INFO 6540 --- [order-cart-service] [main] [                                                 ] o.s.cloud.context.scope.GenericScope     : BeanFactory id=80a882b3-a956-38ab-af2d-ba96699c2ade
+2025-08-19T19:38:06.202+05:30  INFO 6540 --- [order-cart-service] [main] [                                                 ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8083 (http)
+2025-08-19T19:38:06.315+05:30  INFO 6540 --- [order-cart-service] [main] [                                                 ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-19T19:38:06.316+05:30  INFO 6540 --- [order-cart-service] [main] [                                                 ] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-19T19:38:06.763+05:30  INFO 6540 --- [order-cart-service] [main] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-19T19:38:06.764+05:30  INFO 6540 --- [order-cart-service] [main] [                                                 ] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 37730 ms
+2025-08-19T19:38:31.415+05:30  INFO 6540 --- [order-cart-service] [main] [                                                 ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-19T19:38:32.091+05:30  INFO 6540 --- [order-cart-service] [main] [                                                 ] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-19T19:38:32.452+05:30  INFO 6540 --- [order-cart-service] [main] [                                                 ] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-19T19:38:35.011+05:30  INFO 6540 --- [order-cart-service] [main] [                                                 ] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-19T19:38:35.166+05:30  INFO 6540 --- [order-cart-service] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-19T19:38:39.990+05:30  INFO 6540 --- [order-cart-service] [main] [                                                 ] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@63fef83c
+2025-08-19T19:38:39.994+05:30  INFO 6540 --- [order-cart-service] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-19T19:38:40.992+05:30  WARN 6540 --- [order-cart-service] [main] [                                                 ] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-19T19:38:42.019+05:30  INFO 6540 --- [order-cart-service] [main] [                                                 ] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-19T19:38:55.002+05:30  INFO 6540 --- [order-cart-service] [main] [                                                 ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-19T19:38:58.519+05:30  INFO 6540 --- [order-cart-service] [main] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-19T19:39:06.884+05:30  WARN 6540 --- [order-cart-service] [main] [                                                 ] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-19T19:39:17.361+05:30  WARN 6540 --- [order-cart-service] [main] [                                                 ] c.f.c.c.BeanFactoryAwareFunctionRegistry : Failed to locate function 'busConsumer' for function definition 'busConsumer'. Returning null.
+2025-08-19T19:39:18.716+05:30  INFO 6540 --- [order-cart-service] [main] [                                                 ] o.s.c.s.m.DirectWithAttributesChannel    : Channel 'order-cart-service.springCloudBusInput' has 1 subscriber(s).
+2025-08-19T19:39:22.510+05:30  INFO 6540 --- [order-cart-service] [main] [                                                 ] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-08-19T19:39:23.248+05:30  WARN 6540 --- [order-cart-service] [main] [                                                 ] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-08-19T19:39:23.402+05:30  INFO 6540 --- [order-cart-service] [main] [                                                 ] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 35 endpoints beneath base path '/actuator'
+2025-08-19T19:39:24.344+05:30  INFO 6540 --- [order-cart-service] [main] [                                                 ] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2025-08-19T19:39:24.345+05:30  INFO 6540 --- [order-cart-service] [main] [                                                 ] o.s.i.channel.PublishSubscribeChannel    : Channel 'order-cart-service.errorChannel' has 1 subscriber(s).
+2025-08-19T19:39:24.347+05:30  INFO 6540 --- [order-cart-service] [main] [                                                 ] o.s.i.endpoint.EventDrivenConsumer       : started bean '_org.springframework.integration.errorLogger'
+2025-08-19T19:39:24.639+05:30  INFO 6540 --- [order-cart-service] [main] [                                                 ] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-08-19T19:39:24.797+05:30  INFO 6540 --- [order-cart-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-08-19T19:39:24.811+05:30  INFO 6540 --- [order-cart-service] [main] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-19T19:39:24.878+05:30  INFO 6540 --- [order-cart-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-08-19T19:39:24.879+05:30  INFO 6540 --- [order-cart-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-08-19T19:39:24.882+05:30  INFO 6540 --- [order-cart-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-08-19T19:39:24.884+05:30  INFO 6540 --- [order-cart-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-08-19T19:39:24.884+05:30  INFO 6540 --- [order-cart-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-08-19T19:39:24.889+05:30  INFO 6540 --- [order-cart-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-08-19T19:39:24.891+05:30  INFO 6540 --- [order-cart-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-08-19T19:39:25.702+05:30  INFO 6540 --- [order-cart-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-08-19T19:39:25.710+05:30  INFO 6540 --- [order-cart-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-08-19T19:39:25.714+05:30  INFO 6540 --- [order-cart-service] [main] [                                                 ] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-08-19T19:39:25.717+05:30  INFO 6540 --- [order-cart-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1755612565716 with initial instances count: 2
+2025-08-19T19:39:25.739+05:30  INFO 6540 --- [order-cart-service] [main] [                                                 ] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ORDER-CART-SERVICE with eureka with status UP
+2025-08-19T19:39:25.742+05:30  INFO 6540 --- [order-cart-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755612565742, current=UP, previous=STARTING]
+2025-08-19T19:39:25.747+05:30  INFO 6540 --- [order-cart-service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-CART-SERVICE/DESKTOP-IEJSSAR.mshome.net:order-cart-service:8083: registering service...
+2025-08-19T19:39:25.749+05:30  INFO 6540 --- [order-cart-service] [main] [                                                 ] o.s.c.s.binder.DefaultBinderFactory      : Creating binder: rabbit
+2025-08-19T19:39:25.750+05:30  INFO 6540 --- [order-cart-service] [main] [                                                 ] o.s.c.s.binder.DefaultBinderFactory      : Constructing binder child context for rabbit
+2025-08-19T19:39:25.906+05:30  INFO 6540 --- [order-cart-service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-CART-SERVICE/DESKTOP-IEJSSAR.mshome.net:order-cart-service:8083 - registration status: 204
+2025-08-19T19:39:26.153+05:30  INFO 6540 --- [order-cart-service] [main] [                                                 ] o.s.c.s.binder.DefaultBinderFactory      : Caching the binder: rabbit
+2025-08-19T19:39:26.232+05:30  INFO 6540 --- [order-cart-service] [main] [                                                 ] c.s.b.r.p.RabbitExchangeQueueProvisioner : declaring queue for inbound: springCloudBus.anonymous.dK9u2K5_S1-EB94mMqjDgg, bound to: springCloudBus
+2025-08-19T19:39:26.258+05:30  INFO 6540 --- [order-cart-service] [main] [                                                 ] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2025-08-19T19:39:26.956+05:30  INFO 6540 --- [order-cart-service] [main] [                                                 ] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#d19c280:0/SimpleConnection@5c97a373 [delegate=amqp://guest@127.0.0.1:5672/, localPort=55427]
+2025-08-19T19:39:27.886+05:30  INFO 6540 --- [order-cart-service] [main] [                                                 ] o.s.c.stream.binder.BinderErrorChannel   : Channel 'rabbit-7142125.springCloudBusInput.errors' has 1 subscriber(s).
+2025-08-19T19:39:27.889+05:30  INFO 6540 --- [order-cart-service] [main] [                                                 ] o.s.c.stream.binder.BinderErrorChannel   : Channel 'rabbit-7142125.springCloudBusInput.errors' has 2 subscriber(s).
+2025-08-19T19:39:28.036+05:30  INFO 6540 --- [order-cart-service] [main] [                                                 ] o.s.i.a.i.AmqpInboundChannelAdapter      : started bean 'inbound.springCloudBus.anonymous.dK9u2K5_S1-EB94mMqjDgg'
+2025-08-19T19:39:28.068+05:30  INFO 6540 --- [order-cart-service] [main] [                                                 ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8083 (http) with context path '/'
+2025-08-19T19:39:28.074+05:30  INFO 6540 --- [order-cart-service] [main] [                                                 ] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8083
+2025-08-19T19:39:28.378+05:30  INFO 6540 --- [order-cart-service] [http-nio-8083-exec-1] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-19T19:39:28.379+05:30  INFO 6540 --- [order-cart-service] [http-nio-8083-exec-1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-19T19:39:28.384+05:30  INFO 6540 --- [order-cart-service] [main] [                                                 ] com.ecommerce.order.OrderApplication     : Started OrderApplication in 127.185 seconds (process running for 134.558)
+2025-08-19T19:39:28.387+05:30  INFO 6540 --- [order-cart-service] [http-nio-8083-exec-1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2025-08-19T19:40:33.832+05:30  WARN 6540 --- [order-cart-service] [http-nio-8083-exec-9] [68a485ca4ccbeef3953f3fde6f0efe59-6730977007834a8b] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: user-service
+2025-08-19T19:42:34.901+05:30  INFO 6540 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application ORDER-CART-SERVICE with eureka with status DOWN
+2025-08-19T19:42:34.912+05:30  INFO 6540 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755612754912, current=DOWN, previous=UP]
+2025-08-19T19:42:34.914+05:30  INFO 6540 --- [order-cart-service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-CART-SERVICE/DESKTOP-IEJSSAR.mshome.net:order-cart-service:8083: registering service...
+2025-08-19T19:42:35.012+05:30  INFO 6540 --- [order-cart-service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-CART-SERVICE/DESKTOP-IEJSSAR.mshome.net:order-cart-service:8083 - registration status: 204
+2025-08-19T19:42:35.218+05:30  INFO 6540 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-19T19:42:35.254+05:30  INFO 6540 --- [order-cart-service] [tomcat-shutdown] [                                                 ] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-19T19:42:35.487+05:30  INFO 6540 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2025-08-19T19:42:35.583+05:30  INFO 6540 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2025-08-19T19:42:35.588+05:30  INFO 6540 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] o.s.i.a.i.AmqpInboundChannelAdapter      : stopped bean 'inbound.springCloudBus.anonymous.dK9u2K5_S1-EB94mMqjDgg'
+2025-08-19T19:42:35.621+05:30  INFO 6540 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] o.s.c.stream.binder.BinderErrorChannel   : Channel 'order-cart-service.rabbit-7142125.springCloudBusInput.errors' has 1 subscriber(s).
+2025-08-19T19:42:35.630+05:30  INFO 6540 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] o.s.c.stream.binder.BinderErrorChannel   : Channel 'order-cart-service.rabbit-7142125.springCloudBusInput.errors' has 0 subscriber(s).
+2025-08-19T19:42:35.705+05:30  INFO 6540 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] o.s.i.endpoint.EventDrivenConsumer       : Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2025-08-19T19:42:35.707+05:30  INFO 6540 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] o.s.i.channel.PublishSubscribeChannel    : Channel 'order-cart-service.errorChannel' has 0 subscriber(s).
+2025-08-19T19:42:35.710+05:30  INFO 6540 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] o.s.i.endpoint.EventDrivenConsumer       : stopped bean '_org.springframework.integration.errorLogger'
+2025-08-19T19:42:35.822+05:30  INFO 6540 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-19T19:42:35.903+05:30  INFO 6540 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-19T19:42:38.574+05:30  INFO 6540 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-19T19:42:38.658+05:30  INFO 6540 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-08-19T19:42:41.671+05:30  INFO 6540 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-08-19T19:42:41.707+05:30  INFO 6540 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-CART-SERVICE/DESKTOP-IEJSSAR.mshome.net:order-cart-service:8083 - deregister  status: 200
+2025-08-19T19:42:41.710+05:30  INFO 6540 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-08-19T19:43:28.037+05:30  INFO 15004 --- [order-cart-service] [main] [                                                 ] com.ecommerce.order.OrderApplication     : Starting OrderApplication using Java 21.0.8 with PID 15004 (C:\Users\pc\Desktop\Ecom-Microservices\Microservices with Eureka , API Gateway and Resilience4j\order\target\classes started by pc in C:\Users\pc\Desktop\Ecom-Microservices\Microservices with Eureka , API Gateway and Resilience4j)
+2025-08-19T19:43:28.046+05:30  INFO 15004 --- [order-cart-service] [main] [                                                 ] com.ecommerce.order.OrderApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-08-19T19:43:28.274+05:30  INFO 15004 --- [order-cart-service] [main] [                                                 ] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2025-08-19T19:43:28.276+05:30  INFO 15004 --- [order-cart-service] [main] [                                                 ] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=order-cart-service, profiles=[default], label=null, version=null, state=null
+2025-08-19T19:43:38.763+05:30  INFO 15004 --- [order-cart-service] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-19T19:43:41.148+05:30  INFO 15004 --- [order-cart-service] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2281 ms. Found 2 JPA repository interfaces.
+2025-08-19T19:43:44.167+05:30  INFO 15004 --- [order-cart-service] [main] [                                                 ] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2025-08-19T19:43:44.234+05:30  INFO 15004 --- [order-cart-service] [main] [                                                 ] faultConfiguringBeanFactoryPostProcessor : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2025-08-19T19:43:45.551+05:30  INFO 15004 --- [order-cart-service] [main] [                                                 ] o.s.cloud.context.scope.GenericScope     : BeanFactory id=80a882b3-a956-38ab-af2d-ba96699c2ade
+2025-08-19T19:43:53.666+05:30  INFO 15004 --- [order-cart-service] [main] [                                                 ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8083 (http)
+2025-08-19T19:43:53.711+05:30  INFO 15004 --- [order-cart-service] [main] [                                                 ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-19T19:43:53.713+05:30  INFO 15004 --- [order-cart-service] [main] [                                                 ] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-19T19:43:55.230+05:30  INFO 15004 --- [order-cart-service] [main] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-19T19:43:55.233+05:30  INFO 15004 --- [order-cart-service] [main] [                                                 ] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 26932 ms
+2025-08-19T19:44:03.981+05:30  INFO 15004 --- [order-cart-service] [main] [                                                 ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-19T19:44:04.596+05:30  INFO 15004 --- [order-cart-service] [main] [                                                 ] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-19T19:44:04.853+05:30  INFO 15004 --- [order-cart-service] [main] [                                                 ] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-19T19:44:08.306+05:30  INFO 15004 --- [order-cart-service] [main] [                                                 ] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-19T19:44:08.735+05:30  INFO 15004 --- [order-cart-service] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-19T19:44:13.740+05:30  INFO 15004 --- [order-cart-service] [main] [                                                 ] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3bb186b
+2025-08-19T19:44:13.746+05:30  INFO 15004 --- [order-cart-service] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-19T19:44:14.431+05:30  WARN 15004 --- [order-cart-service] [main] [                                                 ] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-19T19:44:15.541+05:30  INFO 15004 --- [order-cart-service] [main] [                                                 ] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-19T19:44:21.218+05:30  INFO 15004 --- [order-cart-service] [main] [                                                 ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-19T19:44:24.565+05:30  INFO 15004 --- [order-cart-service] [main] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-19T19:44:29.693+05:30  WARN 15004 --- [order-cart-service] [main] [                                                 ] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-19T19:44:36.618+05:30  WARN 15004 --- [order-cart-service] [main] [                                                 ] c.f.c.c.BeanFactoryAwareFunctionRegistry : Failed to locate function 'busConsumer' for function definition 'busConsumer'. Returning null.
+2025-08-19T19:44:37.365+05:30  INFO 15004 --- [order-cart-service] [main] [                                                 ] o.s.c.s.m.DirectWithAttributesChannel    : Channel 'order-cart-service.springCloudBusInput' has 1 subscriber(s).
+2025-08-19T19:44:39.543+05:30  INFO 15004 --- [order-cart-service] [main] [                                                 ] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-08-19T19:44:40.016+05:30  WARN 15004 --- [order-cart-service] [main] [                                                 ] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-08-19T19:44:40.088+05:30  INFO 15004 --- [order-cart-service] [main] [                                                 ] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 35 endpoints beneath base path '/actuator'
+2025-08-19T19:44:41.403+05:30  INFO 15004 --- [order-cart-service] [main] [                                                 ] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2025-08-19T19:44:41.404+05:30  INFO 15004 --- [order-cart-service] [main] [                                                 ] o.s.i.channel.PublishSubscribeChannel    : Channel 'order-cart-service.errorChannel' has 1 subscriber(s).
+2025-08-19T19:44:41.407+05:30  INFO 15004 --- [order-cart-service] [main] [                                                 ] o.s.i.endpoint.EventDrivenConsumer       : started bean '_org.springframework.integration.errorLogger'
+2025-08-19T19:44:42.853+05:30  INFO 15004 --- [order-cart-service] [main] [                                                 ] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-08-19T19:44:42.991+05:30  INFO 15004 --- [order-cart-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-08-19T19:44:43.003+05:30  INFO 15004 --- [order-cart-service] [main] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-19T19:44:43.037+05:30  INFO 15004 --- [order-cart-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-08-19T19:44:43.037+05:30  INFO 15004 --- [order-cart-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-08-19T19:44:43.038+05:30  INFO 15004 --- [order-cart-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-08-19T19:44:43.038+05:30  INFO 15004 --- [order-cart-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-08-19T19:44:43.039+05:30  INFO 15004 --- [order-cart-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-08-19T19:44:43.039+05:30  INFO 15004 --- [order-cart-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-08-19T19:44:43.040+05:30  INFO 15004 --- [order-cart-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-08-19T19:44:44.569+05:30  INFO 15004 --- [order-cart-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-08-19T19:44:44.576+05:30  INFO 15004 --- [order-cart-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-08-19T19:44:44.597+05:30  INFO 15004 --- [order-cart-service] [main] [                                                 ] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-08-19T19:44:44.603+05:30  INFO 15004 --- [order-cart-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1755612884602 with initial instances count: 2
+2025-08-19T19:44:44.625+05:30  INFO 15004 --- [order-cart-service] [main] [                                                 ] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ORDER-CART-SERVICE with eureka with status UP
+2025-08-19T19:44:44.627+05:30  INFO 15004 --- [order-cart-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755612884627, current=UP, previous=STARTING]
+2025-08-19T19:44:44.632+05:30  INFO 15004 --- [order-cart-service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-CART-SERVICE/DESKTOP-IEJSSAR.mshome.net:order-cart-service:8083: registering service...
+2025-08-19T19:44:44.695+05:30  INFO 15004 --- [order-cart-service] [main] [                                                 ] o.s.c.s.binder.DefaultBinderFactory      : Creating binder: rabbit
+2025-08-19T19:44:44.695+05:30  INFO 15004 --- [order-cart-service] [main] [                                                 ] o.s.c.s.binder.DefaultBinderFactory      : Constructing binder child context for rabbit
+2025-08-19T19:44:44.988+05:30  INFO 15004 --- [order-cart-service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-CART-SERVICE/DESKTOP-IEJSSAR.mshome.net:order-cart-service:8083 - registration status: 204
+2025-08-19T19:44:45.254+05:30  INFO 15004 --- [order-cart-service] [main] [                                                 ] o.s.c.s.binder.DefaultBinderFactory      : Caching the binder: rabbit
+2025-08-19T19:44:45.327+05:30  INFO 15004 --- [order-cart-service] [main] [                                                 ] c.s.b.r.p.RabbitExchangeQueueProvisioner : declaring queue for inbound: springCloudBus.anonymous.mFF45ifITdStLemDs0E7wg, bound to: springCloudBus
+2025-08-19T19:44:45.347+05:30  INFO 15004 --- [order-cart-service] [main] [                                                 ] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2025-08-19T19:44:47.374+05:30  INFO 15004 --- [order-cart-service] [main] [                                                 ] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#4c4a8ffe:0/SimpleConnection@3a05ba57 [delegate=amqp://guest@127.0.0.1:5672/, localPort=55731]
+2025-08-19T19:44:48.525+05:30  INFO 15004 --- [order-cart-service] [main] [                                                 ] o.s.c.stream.binder.BinderErrorChannel   : Channel 'rabbit-884116744.springCloudBusInput.errors' has 1 subscriber(s).
+2025-08-19T19:44:48.530+05:30  INFO 15004 --- [order-cart-service] [main] [                                                 ] o.s.c.stream.binder.BinderErrorChannel   : Channel 'rabbit-884116744.springCloudBusInput.errors' has 2 subscriber(s).
+2025-08-19T19:44:48.997+05:30  INFO 15004 --- [order-cart-service] [main] [                                                 ] o.s.i.a.i.AmqpInboundChannelAdapter      : started bean 'inbound.springCloudBus.anonymous.mFF45ifITdStLemDs0E7wg'
+2025-08-19T19:44:49.231+05:30  INFO 15004 --- [order-cart-service] [main] [                                                 ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8083 (http) with context path '/'
+2025-08-19T19:44:49.242+05:30  INFO 15004 --- [order-cart-service] [main] [                                                 ] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8083
+2025-08-19T19:44:50.030+05:30  INFO 15004 --- [order-cart-service] [main] [                                                 ] com.ecommerce.order.OrderApplication     : Started OrderApplication in 90.47 seconds (process running for 94.27)
+2025-08-19T19:44:50.121+05:30  INFO 15004 --- [order-cart-service] [http-nio-8083-exec-1] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-19T19:44:50.122+05:30  INFO 15004 --- [order-cart-service] [http-nio-8083-exec-1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-19T19:44:50.164+05:30  INFO 15004 --- [order-cart-service] [http-nio-8083-exec-1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2025-08-19T19:45:33.162+05:30  INFO 15004 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application ORDER-CART-SERVICE with eureka with status DOWN
+2025-08-19T19:45:33.164+05:30  INFO 15004 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755612933164, current=DOWN, previous=UP]
+2025-08-19T19:45:33.165+05:30  INFO 15004 --- [order-cart-service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-CART-SERVICE/DESKTOP-IEJSSAR.mshome.net:order-cart-service:8083: registering service...
+2025-08-19T19:45:33.178+05:30  INFO 15004 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-19T19:45:33.184+05:30  INFO 15004 --- [order-cart-service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-CART-SERVICE/DESKTOP-IEJSSAR.mshome.net:order-cart-service:8083 - registration status: 204
+2025-08-19T19:45:33.203+05:30  INFO 15004 --- [order-cart-service] [tomcat-shutdown] [                                                 ] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-19T19:45:33.248+05:30  INFO 15004 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2025-08-19T19:45:33.825+05:30  INFO 15004 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2025-08-19T19:45:33.826+05:30  INFO 15004 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] o.s.i.a.i.AmqpInboundChannelAdapter      : stopped bean 'inbound.springCloudBus.anonymous.mFF45ifITdStLemDs0E7wg'
+2025-08-19T19:45:33.830+05:30  INFO 15004 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] o.s.c.stream.binder.BinderErrorChannel   : Channel 'order-cart-service.rabbit-884116744.springCloudBusInput.errors' has 1 subscriber(s).
+2025-08-19T19:45:33.832+05:30  INFO 15004 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] o.s.c.stream.binder.BinderErrorChannel   : Channel 'order-cart-service.rabbit-884116744.springCloudBusInput.errors' has 0 subscriber(s).
+2025-08-19T19:45:33.939+05:30  INFO 15004 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] o.s.i.endpoint.EventDrivenConsumer       : Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2025-08-19T19:45:33.940+05:30  INFO 15004 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] o.s.i.channel.PublishSubscribeChannel    : Channel 'order-cart-service.errorChannel' has 0 subscriber(s).
+2025-08-19T19:45:33.941+05:30  INFO 15004 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] o.s.i.endpoint.EventDrivenConsumer       : stopped bean '_org.springframework.integration.errorLogger'
+2025-08-19T19:45:33.989+05:30  INFO 15004 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-19T19:45:33.992+05:30  INFO 15004 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-19T19:45:36.860+05:30  INFO 15004 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-19T19:45:37.308+05:30  INFO 15004 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-08-19T19:45:40.325+05:30  INFO 15004 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-08-19T19:45:40.350+05:30  INFO 15004 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-CART-SERVICE/DESKTOP-IEJSSAR.mshome.net:order-cart-service:8083 - deregister  status: 200
+2025-08-19T19:45:40.350+05:30  INFO 15004 --- [order-cart-service] [SpringApplicationShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-08-19T19:46:29.604+05:30  INFO 13096 --- [order-cart-service] [main] [                                                 ] com.ecommerce.order.OrderApplication     : Starting OrderApplication using Java 21.0.8 with PID 13096 (C:\Users\pc\Desktop\Ecom-Microservices\Microservices with Eureka , API Gateway and Resilience4j\order\target\classes started by pc in C:\Users\pc\Desktop\Ecom-Microservices\Microservices with Eureka , API Gateway and Resilience4j)
+2025-08-19T19:46:29.625+05:30  INFO 13096 --- [order-cart-service] [main] [                                                 ] com.ecommerce.order.OrderApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-08-19T19:46:29.911+05:30  INFO 13096 --- [order-cart-service] [main] [                                                 ] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2025-08-19T19:46:29.912+05:30  INFO 13096 --- [order-cart-service] [main] [                                                 ] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=order-cart-service, profiles=[default], label=null, version=null, state=null
+2025-08-19T19:46:43.503+05:30  INFO 13096 --- [order-cart-service] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-19T19:46:44.765+05:30  INFO 13096 --- [order-cart-service] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1151 ms. Found 2 JPA repository interfaces.
+2025-08-19T19:46:45.972+05:30  INFO 13096 --- [order-cart-service] [main] [                                                 ] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2025-08-19T19:46:45.998+05:30  INFO 13096 --- [order-cart-service] [main] [                                                 ] faultConfiguringBeanFactoryPostProcessor : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2025-08-19T19:46:48.021+05:30  INFO 13096 --- [order-cart-service] [main] [                                                 ] o.s.cloud.context.scope.GenericScope     : BeanFactory id=80a882b3-a956-38ab-af2d-ba96699c2ade
+2025-08-19T19:46:57.508+05:30  INFO 13096 --- [order-cart-service] [main] [                                                 ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8083 (http)
+2025-08-19T19:46:57.622+05:30  INFO 13096 --- [order-cart-service] [main] [                                                 ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-19T19:46:57.627+05:30  INFO 13096 --- [order-cart-service] [main] [                                                 ] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-19T19:46:58.222+05:30  INFO 13096 --- [order-cart-service] [main] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-19T19:46:58.225+05:30  INFO 13096 --- [order-cart-service] [main] [                                                 ] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 28296 ms
+2025-08-19T19:47:16.653+05:30  INFO 13096 --- [order-cart-service] [main] [                                                 ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-19T19:47:17.573+05:30  INFO 13096 --- [order-cart-service] [main] [                                                 ] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-19T19:47:17.996+05:30  INFO 13096 --- [order-cart-service] [main] [                                                 ] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-19T19:47:21.535+05:30  INFO 13096 --- [order-cart-service] [main] [                                                 ] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-19T19:47:21.789+05:30  INFO 13096 --- [order-cart-service] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-19T19:47:27.278+05:30  INFO 13096 --- [order-cart-service] [main] [                                                 ] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@d9ff1cd
+2025-08-19T19:47:27.283+05:30  INFO 13096 --- [order-cart-service] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-19T19:47:27.663+05:30  WARN 13096 --- [order-cart-service] [main] [                                                 ] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-19T19:47:28.535+05:30  INFO 13096 --- [order-cart-service] [main] [                                                 ] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-19T19:47:38.811+05:30  INFO 13096 --- [order-cart-service] [main] [                                                 ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-19T19:47:41.489+05:30  INFO 13096 --- [order-cart-service] [main] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-19T19:47:53.858+05:30  WARN 13096 --- [order-cart-service] [main] [                                                 ] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-19T19:48:06.256+05:30  WARN 13096 --- [order-cart-service] [main] [                                                 ] c.f.c.c.BeanFactoryAwareFunctionRegistry : Failed to locate function 'busConsumer' for function definition 'busConsumer'. Returning null.
+2025-08-19T19:48:06.770+05:30  INFO 13096 --- [order-cart-service] [main] [                                                 ] o.s.c.s.m.DirectWithAttributesChannel    : Channel 'order-cart-service.springCloudBusInput' has 1 subscriber(s).
+2025-08-19T19:48:09.516+05:30  INFO 13096 --- [order-cart-service] [main] [                                                 ] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-08-19T19:48:10.161+05:30  WARN 13096 --- [order-cart-service] [main] [                                                 ] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-08-19T19:48:10.267+05:30  INFO 13096 --- [order-cart-service] [main] [                                                 ] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 35 endpoints beneath base path '/actuator'
+2025-08-19T19:48:11.349+05:30  INFO 13096 --- [order-cart-service] [main] [                                                 ] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2025-08-19T19:48:11.350+05:30  INFO 13096 --- [order-cart-service] [main] [                                                 ] o.s.i.channel.PublishSubscribeChannel    : Channel 'order-cart-service.errorChannel' has 1 subscriber(s).
+2025-08-19T19:48:11.351+05:30  INFO 13096 --- [order-cart-service] [main] [                                                 ] o.s.i.endpoint.EventDrivenConsumer       : started bean '_org.springframework.integration.errorLogger'
+2025-08-19T19:48:11.587+05:30  INFO 13096 --- [order-cart-service] [main] [                                                 ] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-08-19T19:48:11.719+05:30  INFO 13096 --- [order-cart-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-08-19T19:48:11.731+05:30  INFO 13096 --- [order-cart-service] [main] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-19T19:48:11.768+05:30  INFO 13096 --- [order-cart-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-08-19T19:48:11.769+05:30  INFO 13096 --- [order-cart-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-08-19T19:48:11.770+05:30  INFO 13096 --- [order-cart-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-08-19T19:48:11.771+05:30  INFO 13096 --- [order-cart-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-08-19T19:48:11.772+05:30  INFO 13096 --- [order-cart-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-08-19T19:48:11.772+05:30  INFO 13096 --- [order-cart-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-08-19T19:48:11.773+05:30  INFO 13096 --- [order-cart-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-08-19T19:48:12.581+05:30  INFO 13096 --- [order-cart-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-08-19T19:48:12.587+05:30  INFO 13096 --- [order-cart-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-08-19T19:48:12.592+05:30  INFO 13096 --- [order-cart-service] [main] [                                                 ] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-08-19T19:48:12.595+05:30  INFO 13096 --- [order-cart-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1755613092595 with initial instances count: 2
+2025-08-19T19:48:12.648+05:30  INFO 13096 --- [order-cart-service] [main] [                                                 ] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ORDER-CART-SERVICE with eureka with status UP
+2025-08-19T19:48:12.650+05:30  INFO 13096 --- [order-cart-service] [main] [                                                 ] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755613092650, current=UP, previous=STARTING]
+2025-08-19T19:48:12.657+05:30  INFO 13096 --- [order-cart-service] [main] [                                                 ] o.s.c.s.binder.DefaultBinderFactory      : Creating binder: rabbit
+2025-08-19T19:48:12.658+05:30  INFO 13096 --- [order-cart-service] [main] [                                                 ] o.s.c.s.binder.DefaultBinderFactory      : Constructing binder child context for rabbit
+2025-08-19T19:48:12.677+05:30  INFO 13096 --- [order-cart-service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-CART-SERVICE/DESKTOP-IEJSSAR.mshome.net:order-cart-service:8083: registering service...
+2025-08-19T19:48:12.970+05:30  INFO 13096 --- [order-cart-service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-CART-SERVICE/DESKTOP-IEJSSAR.mshome.net:order-cart-service:8083 - registration status: 204
+2025-08-19T19:48:13.207+05:30  INFO 13096 --- [order-cart-service] [main] [                                                 ] o.s.c.s.binder.DefaultBinderFactory      : Caching the binder: rabbit
+2025-08-19T19:48:13.321+05:30  INFO 13096 --- [order-cart-service] [main] [                                                 ] c.s.b.r.p.RabbitExchangeQueueProvisioner : declaring queue for inbound: springCloudBus.anonymous.wflHlDGbRFuRfKskeUksmg, bound to: springCloudBus
+2025-08-19T19:48:13.364+05:30  INFO 13096 --- [order-cart-service] [main] [                                                 ] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2025-08-19T19:48:17.204+05:30  INFO 13096 --- [order-cart-service] [main] [                                                 ] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#4aa007c6:0/SimpleConnection@7acec6db [delegate=amqp://guest@127.0.0.1:5672/, localPort=56031]
+2025-08-19T19:48:17.840+05:30  INFO 13096 --- [order-cart-service] [main] [                                                 ] o.s.c.stream.binder.BinderErrorChannel   : Channel 'rabbit-1973812866.springCloudBusInput.errors' has 1 subscriber(s).
+2025-08-19T19:48:17.844+05:30  INFO 13096 --- [order-cart-service] [main] [                                                 ] o.s.c.stream.binder.BinderErrorChannel   : Channel 'rabbit-1973812866.springCloudBusInput.errors' has 2 subscriber(s).
+2025-08-19T19:48:17.933+05:30  INFO 13096 --- [order-cart-service] [main] [                                                 ] o.s.i.a.i.AmqpInboundChannelAdapter      : started bean 'inbound.springCloudBus.anonymous.wflHlDGbRFuRfKskeUksmg'
+2025-08-19T19:48:17.976+05:30  INFO 13096 --- [order-cart-service] [main] [                                                 ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8083 (http) with context path '/'
+2025-08-19T19:48:17.985+05:30  INFO 13096 --- [order-cart-service] [main] [                                                 ] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8083
+2025-08-19T19:48:18.683+05:30  INFO 13096 --- [order-cart-service] [main] [                                                 ] com.ecommerce.order.OrderApplication     : Started OrderApplication in 121.204 seconds (process running for 127.305)
+2025-08-19T19:48:19.474+05:30  INFO 13096 --- [order-cart-service] [http-nio-8083-exec-1] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-19T19:48:19.475+05:30  INFO 13096 --- [order-cart-service] [http-nio-8083-exec-1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-19T19:48:19.489+05:30  INFO 13096 --- [order-cart-service] [http-nio-8083-exec-1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2025-08-19T19:49:17.200+05:30  WARN 13096 --- [order-cart-service] [http-nio-8083-exec-10] [68a487dfd4b07a254dc0df8cbc0f7e1c-8a9059206a592e26] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: user-service
+2025-08-19T19:53:11.791+05:30  INFO 13096 --- [order-cart-service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-19T19:58:11.817+05:30  INFO 13096 --- [order-cart-service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
