@@ -22,5 +22,4 @@ public class FallBackController {
         return ResponseEntity.status(HttpStatus.SERVICE_UNAVAILABLE)
                 .body(Collections.singletonList("User Service Is Unavailable Please Try again After Sometime"));
     }
-
 }
