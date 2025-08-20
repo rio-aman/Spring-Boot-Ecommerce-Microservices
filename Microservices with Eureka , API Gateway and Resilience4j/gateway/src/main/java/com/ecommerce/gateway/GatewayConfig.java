@@ -1,13 +1,34 @@
 package com.ecommerce.gateway;
 
+import org.springframework.cloud.gateway.filter.ratelimit.KeyResolver;
+import org.springframework.cloud.gateway.filter.ratelimit.RedisRateLimiter;
 import org.springframework.cloud.gateway.route.RouteLocator;
 import org.springframework.cloud.gateway.route.builder.RouteLocatorBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
+import reactor.core.publisher.Mono;
 
 @Configuration
 public class GatewayConfig {
+
+    // using redis rate limiter
+    @Bean
+    public KeyResolver hostnameKeyResolver(){
+        return exchange -> Mono.just
+                (exchange.getRequest().getRemoteAddress().getHostName());
+    }
+
+    @Bean
+    public RedisRateLimiter redisRateLimiter(){
+//        return new RedisRateLimiter(1,1,1);
+
+        return new RedisRateLimiter(10,20,1);
+//  So the replenish rate is ten which means the bucket is refilled with ten tokens per second.
+//  Default burst capacity is 20, which means the bucket can hold up to 20 tokens, allowing for short bursts of up to 20 requests at once.
+//  So 20 requests at once can hit the server. And default request token is being set to one, which means that each request will typically
+//  consume one token.
+    }
 
     @Bean
     public RouteLocator customRouteLocator(RouteLocatorBuilder builder){
@@ -51,6 +72,9 @@ public class GatewayConfig {
                         .filters(f -> f
                                 .retry(retryConfig -> retryConfig
                                         .setRetries(10).setMethods(HttpMethod.GET))
+                                .requestRateLimiter(config -> config
+                                        .setRateLimiter(redisRateLimiter())
+                                        .setKeyResolver(hostnameKeyResolver()))
                                 .circuitBreaker(config -> config
                                         .setName("ecomBreaker")
                                         .setFallbackUri("forward:/fallback/products")))
