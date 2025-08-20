@@ -79,3 +79,14 @@ resilience4j:
       retryBreaker:
         maxAttempts: 5
         waitDuration: 500ms
+
+# this is for protecting from DDOS ATTACK can happen on the server if remove this
+# then their not any protection for the multiple request cause server down
+# for this the apache jmeter use for multiple request on a server within a second
+
+  ratelimiter:
+    instances:
+      rateBreaker:
+        timeout-duration: 0
+        limit-refresh-period: 4s
+        limit-for-period: 2
