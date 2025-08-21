@@ -1,5 +1,6 @@
 package com.ecommerce.order.service;
 
+import com.ecommerce.order.config.RabbitMQConfiguration;
 import com.ecommerce.order.dto.OrderItemDto;
 import com.ecommerce.order.dto.OrderResponse;
 import com.ecommerce.order.dto.UserResponse;
@@ -7,10 +8,13 @@ import com.ecommerce.order.httpinterface.UserServiceClient;
 import com.ecommerce.order.model.*;
 import com.ecommerce.order.repository.OrderRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 
 @Service
@@ -20,6 +24,13 @@ public class OrderService {
     private final CartService cartService;
     private final UserServiceClient userServiceClient;
     private final OrderRepository orderRepository;
+    private final RabbitTemplate rabbitTemplate;
+
+    @Value("${rabbitmq.exchange.name}")
+    private String exchangeName;
+
+    @Value("${rabbitmq.routing.key}")
+    private String routingKey;
 
     public Optional<OrderResponse> createOrder(String userId) {
         //Validate the cart items
@@ -58,6 +69,9 @@ public class OrderService {
 
         //Clear the cart
         cartService.clearCart(userId);
+
+        rabbitTemplate.convertAndSend(exchangeName, routingKey,
+                Map.of("orderId", saveOrder.getId(), "status", "CREATED"));
 
         return Optional.of(mapToOrderResponse(saveOrder));
     }
