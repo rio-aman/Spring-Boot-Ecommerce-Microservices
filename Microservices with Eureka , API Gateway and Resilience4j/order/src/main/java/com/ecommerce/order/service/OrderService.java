@@ -1,6 +1,7 @@
 package com.ecommerce.order.service;
 
 import com.ecommerce.order.config.RabbitMQConfiguration;
+import com.ecommerce.order.dto.OrderCreatedEventDTO;
 import com.ecommerce.order.dto.OrderItemDto;
 import com.ecommerce.order.dto.OrderResponse;
 import com.ecommerce.order.dto.UserResponse;
@@ -16,6 +17,7 @@ import java.math.BigDecimal;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
@@ -70,10 +72,35 @@ public class OrderService {
         //Clear the cart
         cartService.clearCart(userId);
 
-        rabbitTemplate.convertAndSend(exchangeName, routingKey,
-                Map.of("orderId", saveOrder.getId(), "status", "CREATED"));
+        // Publish order created event
+        OrderCreatedEventDTO event = new OrderCreatedEventDTO(
+                saveOrder.getId(),
+                saveOrder.getUserId(),
+                saveOrder.getStatus(),
+                mapToOrderItemDtos(saveOrder.getItems()),
+                saveOrder.getTotalAmount(),
+                saveOrder.getCreatedAt()
+        );
+
+//        rabbitTemplate.convertAndSend(exchangeName, routingKey,
+//                Map.of("orderId", saveOrder.getId(), "status", "CREATED"));
+        // here only we are mapping with orderId so there no any format for the order that how it will consume mapping with order id and if the key name is wrong that it won't work
+
+        // for solving the above created a DTO and instead mapping simply give event in it
+        rabbitTemplate.convertAndSend(exchangeName, routingKey, event);
 
         return Optional.of(mapToOrderResponse(saveOrder));
+    }
+
+    private List<OrderItemDto> mapToOrderItemDtos(List<OrderItem> items){
+        return items.stream()
+                .map(item -> new OrderItemDto(
+                        item.getId(),
+                        item.getProductId(),
+                        item.getQuantity(),
+                        item.getPrice(),
+                        item.getPrice().multiply(new BigDecimal(item.getQuantity()))
+                )).collect(Collectors.toList());
     }
 
     private OrderResponse mapToOrderResponse(Order order) {
