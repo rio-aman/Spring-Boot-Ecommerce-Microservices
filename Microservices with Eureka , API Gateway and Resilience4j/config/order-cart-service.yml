@@ -1,17 +1,26 @@
 spring:
   datasource:
-#    url: ${POSTGRESQL_URL}
-#    username: ${POSTGRESQL_USERNAME}
-#    password: ${POSTGRESQL_PASSWORD}
+    url: ${POSTGRESQL_URL}
+    username: ${POSTGRESQL_USERNAME}
+    password: ${POSTGRESQL_PASSWORD}
 
-    url: jdbc:postgresql://ep-soft-recipe-aevurt0x-pooler.c-2.us-east-2.aws.neon.tech/order?sslmode=require&channel_binding=require'
-    username: neondb_owner
-    password: npg_LKG04zXljxqJ
+#  rabbitmq:
+#    host: localhost
+#    port: 5672
+#    username: guest
+#    password: guest
+  # ABOVE WHEN USING THE DOCKER INSTANCE RABBITMQ
+
+  #NOW USING THE CLOUDAMQP RABBITMQ CLOUD
   rabbitmq:
-    host: localhost
-    port: 5672
-    username: guest
-    password: guest
+    host: ${RABBITMQ_HOST:localhost}
+    port: ${RABBITMQ_PORT:5672}
+    username: ${RABBITMQ_USERNAME:guest}
+    password: ${RABBITMQ_PASSWORD:guest}
+    virtual-host: ${RABBITMQ_VHOST:guest}
+    connection-timeout: 30000
+    ssl:
+      enabled: true
   jpa:
     database: POSTGRESQL
     show-sql: true
