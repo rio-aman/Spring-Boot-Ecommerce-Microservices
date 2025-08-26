@@ -2,7 +2,7 @@ package com.kafka.consumer;
 
 public class RiderLocation {
 
-//    using this we will go to send the objects from producer to consumer to consume
+//   In consumer using this to deserialize the objects which comes from producer to consumer to consume
     private String riderId;
     private double latitude;
     private double longitude;
