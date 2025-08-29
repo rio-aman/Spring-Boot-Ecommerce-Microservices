@@ -1,15 +1,35 @@
+#spring:
+#  application:
+#    name: consumer
+#  kafka:
+#    consumer:
+#      bootstrap-server: localhost:9092
+#      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+#      value-deserializer: org.springframework.kafka.support.serializer.ErrorHandlingDeserializer
+#      properties:
+#        spring.deserializer.value.delegate.class: org.springframework.kafka.support.serializer.JsonDeserializer
+#        spring.json.trusted.packages: "*"
+#        spring.json.value.default.type: com.kafka.consumer.RiderLocation
+#
+#server:
+#  port: 8081
+
 spring:
   application:
     name: consumer
-  kafka:
-    consumer:
-      bootstrap-server: localhost:9092
-      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-      value-deserializer: org.springframework.kafka.support.serializer.ErrorHandlingDeserializer
-      properties:
-        spring.deserializer.value.delegate.class: org.springframework.kafka.support.serializer.JsonDeserializer
-        spring.json.trusted.packages: "*"
-        spring.json.value.default.type: com.kafka.consumer.RiderLocation
+
+  cloud:
+    function:
+      definition: processRiderLocation
+    stream:
+      bindings:
+        processRiderLocation-in-0:
+          destination: my-topic-new
+          group: rider-location-group
+          content-type: application/json
+      kafka:
+        binder:
+          brokers: localhost:9092
 
 server:
   port: 8081
