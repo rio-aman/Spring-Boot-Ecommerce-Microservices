@@ -19,6 +19,17 @@ spring:
     ssl:
       enabled: true
 
+  cloud:
+    function:
+      definition: orderCreated
+    stream:
+      function:
+        definition: orderCreated
+      bindings:
+        orderCreated-in-0:
+          destination: order.exchange
+          group: notification-group
+          content-type: application/json
 server:
   port: 8084
 
