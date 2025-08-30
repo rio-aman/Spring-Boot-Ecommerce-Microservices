@@ -27,9 +27,11 @@ spring:
       bindings:
         processRiderLocation-in-0:
           destination: my-topic
+          group: rider-location-grp
           content-type: application/json
         processRiderStatus-in-0:
           destination: my-new-topic-2
+          group: rider-status-grp
           content-type: text/plain
       kafka:
         binder:
