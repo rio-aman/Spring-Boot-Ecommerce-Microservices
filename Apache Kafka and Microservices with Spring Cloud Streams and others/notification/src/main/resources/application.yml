@@ -27,7 +27,7 @@ spring:
         definition: orderCreated
       bindings:
         orderCreated-in-0:
-          destination: order.exchange
+          destination: order.exchange.new
           group: notification-group
           content-type: application/json
 server:
