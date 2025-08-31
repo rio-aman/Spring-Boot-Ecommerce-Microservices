@@ -34,14 +34,14 @@ spring:
     stream:
       bindings:
         createOrder-out-0:
-          destination: order.exchange.new
+          destination: order.exchange
           content-type: application/json
       rabbit:
         bindings:
           createOrder-out-0:
             producer:
               declare-exchange: true
-              routing-key-expression: '''order.tracking.new'''
+              routing-key-expression: '''order.tracking'''
 
 
 server:
