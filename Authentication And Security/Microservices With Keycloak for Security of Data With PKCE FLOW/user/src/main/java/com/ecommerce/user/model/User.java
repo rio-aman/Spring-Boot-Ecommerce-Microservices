@@ -25,6 +25,7 @@ public class User {
     @Id
 //    @GeneratedValue(strategy = GenerationType.IDENTITY)  // used when jpa there
     private String id;
+    private String keycloakId;
     private String firstName;
     private String lastName;
 
