@@ -52,3 +52,12 @@ eureka:
     fetch-registry: true
   instance:
     prefer-ip-address: true
+
+# KEYCLOAK
+keycloak:
+  admin:
+    username: user
+    password: user
+    server-url: http://127.0.0.1:8443
+    realm: ecom-app
+    client-id: admin-cli
